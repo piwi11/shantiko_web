@@ -1,0 +1,22 @@
+body{
+    background-color: var(--tertiary-color);
+}
+#main-header{
+    background-color: #fff;
+    display: flex;
+}
+#main-header>img{
+    width: 100px;
+}
+#main-header>nav{
+    margin-left:auto;
+}
+:root{
+    --primary-color: #379184;
+    --primary-color-light: #89D2C7;
+    --primary-color-dark: #112C28;
+    --secondary-color: #DBA159;
+    --tertiary-color: #F7FFDD;
+    --text-color: #28343E;
+    --accent-color: #A33E4D;
+}
