@@ -7,6 +7,20 @@ body{
 }
 #main-header>img{
     width: 100px;
+    height: 100px;
+}
+#main-header>h1{
+    margin: auto auto auto 20px;
+    font-family: "Averia Libre", serif;
+    font-weight: 700;
+    line-height: 1;
+    font-size: 30px;
+    color: var(--primary-color);
+    text-transform: uppercase;
+}
+#main-header>h1>b{
+    font-size: 46px;
+    font-weight: 500;
 }
 #main-header>nav{
     margin-left:auto;
