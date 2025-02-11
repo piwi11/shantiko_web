@@ -1,0 +1,36 @@
+body{
+    background-color: var(--tertiary-color);
+}
+#main-header{
+    background-color: #fff;
+    display: flex;
+}
+#main-header>img{
+    width: 100px;
+    height: 100px;
+}
+#main-header>h1{
+    margin: auto auto auto 20px;
+    font-family: "Averia Libre", serif;
+    font-weight: 700;
+    line-height: 1;
+    font-size: 30px;
+    color: var(--primary-color);
+    text-transform: uppercase;
+}
+#main-header>h1>b{
+    font-size: 46px;
+    font-weight: 500;
+}
+#main-header>nav{
+    margin-left:auto;
+}
+:root{
+    --primary-color: #379184;
+    --primary-color-light: #89D2C7;
+    --primary-color-dark: #112C28;
+    --secondary-color: #DBA159;
+    --tertiary-color: #F7FFDD;
+    --text-color: #28343E;
+    --accent-color: #A33E4D;
+}
