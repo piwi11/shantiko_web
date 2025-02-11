@@ -1,5 +1,6 @@
 body{
     background-color: var(--tertiary-color);
+    font-family: "Lato", serif;
 }
 #main-header{
     background-color: #fff;
@@ -25,6 +26,47 @@ body{
 #main-header>nav{
     margin-left:auto;
 }
+
+#menu_button>span{
+    font-size: 40px;
+    color: var(--accent-color) ;
+}
+#menu_button{
+    background: transparent;
+    padding: 0px 15px;
+    border: 0px solid transparent;
+    transition: transform 0.3s;
+}
+#menu_button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+
+}
+
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Initially off-screen */
+    height: 100vh;
+    width: 250px; /* Adjust as needed */
+    background-color: var(--primary-color-dark);
+    transition: left 0.3s ease; /* Only transition the left property */
+    z-index: 1000; /* Ensure it's above other content */
+}
+
+.menu.active {
+    left: 0; /* Slide the menu into view */
+}
+
+/* Example styling for menu items */
+.menu-item {
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
 :root{
     --primary-color: #379184;
     --primary-color-light: #89D2C7;
