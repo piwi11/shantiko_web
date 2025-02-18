@@ -16,17 +16,29 @@ body{
 }
 #main-header>h1{
     margin: auto auto auto 20px;
-    font-family: "Averia Libre", serif;
+    font-family: "Kavivanar", "Averia Libre", serif;
     font-weight: 700;
     line-height: 1;
     font-size: 30px;
     color: var(--primary-color);
     text-transform: uppercase;
+    transition: transform 4s ease;
 }
+
+#main-header>h1:hover{
+    transform: rotate(5turn);
+}
+
 #main-header>h1>b{
-    font-size: 46px;
+    font-size: 43px;
     font-weight: 500;
 }
+
+#main-header>h1>span{
+    font-size: 37px;
+}
+
+
 #main-header>nav{
     margin-left:auto;
 }
