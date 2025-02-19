@@ -6,23 +6,39 @@ body{
     background-color: #fff;
     display: flex;
 }
-#main-header>img{
+#main-header>a>img{
     width: 100px;
     height: 100px;
+    cursor: pointer;
+}
+#main-header>a>img:active{
+    cursor: grab;
 }
 #main-header>h1{
     margin: auto auto auto 20px;
-    font-family: "Averia Libre", serif;
+    font-family: "Kavivanar", "Averia Libre", serif;
     font-weight: 700;
     line-height: 1;
     font-size: 30px;
     color: var(--primary-color);
     text-transform: uppercase;
+    transition: transform 4s ease;
 }
+
+#main-header>h1:hover{
+    transform: rotate(5turn);
+}
+
 #main-header>h1>b{
-    font-size: 46px;
+    font-size: 43px;
     font-weight: 500;
 }
+
+#main-header>h1>span{
+    font-size: 37px;
+}
+
+
 #main-header>nav{
     margin-left:auto;
 }
@@ -44,7 +60,8 @@ body{
 }
 
 
-.menu {
+
+#menu {
     position: fixed;
     top: 0;
     left: -250px; /* Initially off-screen */
@@ -55,16 +72,27 @@ body{
     z-index: 1000; /* Ensure it's above other content */
 }
 
-.menu.active {
+
+#menu.active {
     left: 0; /* Slide the menu into view */
+}
+
+#menu>ul{
+    list-style-type: none;
+    padding: 16px 3px;
 }
 
 /* Example styling for menu items */
 .menu-item {
+    font-size: 1.6rem;
     padding: 10px;
-    color: #fff;
+    color: var(--secondary-color);
     text-decoration: none;
     display: block;
+    transition: color 0.3s ease;
+}
+.menu-item:hover {
+    color: var(--tertiary-color);
 }
 
 :root{
