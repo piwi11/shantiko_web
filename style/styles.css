@@ -1,10 +1,19 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background-color: var(--tertiary-color);
     font-family: "Lato", serif;
+    scroll-behavior: smooth;
+    position:relative;
 }
 #main-header{
     background-color: #fff;
     display: flex;
+    position:fixed;
+    top: 0;
+    width: 100%;
 }
 #main-header>a>img{
     width: 100px;
@@ -93,6 +102,24 @@ body{
 }
 .menu-item:hover {
     color: var(--tertiary-color);
+}
+
+body>main>section{
+    min-height: 100dvh;
+    padding: 20px;
+}
+
+#main-hero{
+    min-height: auto;
+    padding: 0;
+}
+
+#main-pizzas{
+    background-color: var(--primary-color-light);
+}
+
+#main-footer{
+    background-color: var(--secondary-color);
 }
 
 :root{
