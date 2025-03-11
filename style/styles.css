@@ -50,7 +50,24 @@ body{
 
 #main-header>nav{
     margin-left:auto;
+    display: none;
+    @media (min-width:640px){
+        display: block;
+    }
 }
+
+
+#main-header nav>ul{
+    list-style-type:none;
+    display: flex;
+    justify-content: start;
+}
+
+
+
+/* #main-header nav>ul>li{
+    
+} */
 
 #menu_button>span{
     font-size: 40px;
