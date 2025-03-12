@@ -49,9 +49,9 @@ body{
 
 
 #main-header>nav{
-    margin-left:auto;
+    margin:auto;
     display: none;
-    @media (min-width:640px){
+    @media (min-width:1024px){
         display: block;
     }
 }
@@ -63,27 +63,36 @@ body{
     justify-content: start;
 }
 
+#main-header>nav>ul>li>.menu-item:hover{
+    color: var(--accent-color);
+    @media (orientation:portrait){
+        color: var(--primary-color-dark);
+    }
+}
 
 
 /* #main-header nav>ul>li{
     
 } */
-
-#menu_button>span{
-    font-size: 40px;
-    color: var(--accent-color) ;
-}
 #menu_button{
     background: transparent;
     padding: 0px 15px;
     border: 0px solid transparent;
     transition: transform 0.3s;
+    display: block;
+    @media (min-width:1024px){
+        display: none;
+    }
 }
 #menu_button:hover{
     cursor: pointer;
     transform: scale(1.1);
-
 }
+#menu_button>span{
+    font-size: 40px;
+    color: var(--accent-color) ;
+}
+
 
 
 
