@@ -80,21 +80,36 @@ body{
     border: 0px solid transparent;
     transition: transform 0.3s;
     display: block;
-    @media (min-width:1024px){
+}
+
+@media (min-width:1024px){
+    #menu_button{
         display: none;
     }
 }
+
 #menu_button:hover{
     cursor: pointer;
     transform: scale(1.1);
 }
-#menu_button>span{
-    font-size: 40px;
-    color: var(--accent-color) ;
+#menu_button>svg{
+    width: 40px;
+    height: 40px;
+    fill: var(--accent-color) ;
+    
 }
 
+.menu_button_close{
+    display: none;
+}
 
+#menu_button.active .menu_button_open {
+    display: none;
+}
 
+#menu_button.active .menu_button_close {
+    display: block;
+}
 
 #menu {
     position: fixed;

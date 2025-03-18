@@ -4,6 +4,7 @@
 <head>
     <title>Shantiko Pizzas</title>
     <meta name="description" content="Foodtruck de pizzas de la Garrotxa">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" href="images/shantiko_logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,7 +14,6 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kavivanar&display=swap">
     <link rel="stylesheet" type="text/css" href="style/fonts.css">
     <link rel="stylesheet" type="text/css" href="style/styles.css">
-
 </head>
 
 <body>
@@ -30,7 +30,10 @@
             </ul>
             <!-- <a href="#" class="menu-item" onclick="closeMenu()">Close</a> -->
         </nav>
-        <button onclick="toggleMenu()" id="menu_button"><img src="images/menu_open.svg" class="menu_button_open" ><img src="images/menu_close.svg" class="menu_button_close" ></button>
+        <button onclick="toggleMenu()" id="menu_button">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" class="menu_button_open"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" class="menu_button_close"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+        </button>
     </header>
     <!-- Navigation Menu -->
     <nav id="menu">
