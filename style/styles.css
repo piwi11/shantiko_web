@@ -14,6 +14,7 @@ body{
     position:fixed;
     top: 0;
     width: 100%;
+    z-index: 9000;
 }
 #main-header>a>img{
     width: 100px;
@@ -119,7 +120,7 @@ body{
     width: 250px; /* Adjust as needed */
     background-color: var(--primary-color-dark);
     transition: left 0.3s ease; /* Only transition the left property */
-    z-index: 1000; /* Ensure it's above other content */
+    z-index: 9999; /* Ensure it's above other content */
 }
 
 
