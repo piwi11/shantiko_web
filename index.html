@@ -1,147 +1,298 @@
 <!DOCTYPE html>
 <html lang="es">
+    <head>
+        <title>Shantiko Pizzas</title>
+        <meta name="description" content="Foodtruck de pizzas de la Garrotxa" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" type="image/png" href="images/shantiko_logo.png" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="stylesheet" type="text/css" href="style/reset.css" />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Averia+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Kavivanar&display=swap"
+        />
+        <link rel="stylesheet" type="text/css" href="style/fonts.css" />
+        <link rel="stylesheet" type="text/css" href="style/styles.css" />
 
-<head>
-    <title>Shantiko Pizzas</title>
-    <meta name="description" content="Foodtruck de pizzas de la Garrotxa">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/png" href="images/shantiko_logo.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" type="text/css" href="style/reset.css">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Averia+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kavivanar&display=swap">
-    <link rel="stylesheet" type="text/css" href="style/fonts.css">
-    <link rel="stylesheet" type="text/css" href="style/styles.css">
-    <link rel="stylesheet" type="text/css" href="style/carousel.css">
-</head>
+        <!-- Required Core Stylesheet -->
+        <link rel="stylesheet" href="lib/glide/glide.core.min.css" />
+        <!-- Optional Theme Stylesheet -->
+        <link rel="stylesheet" href="lib/glide/glide.theme.min.css" />
+        <!-- <link rel="stylesheet" type="text/css" href="style/carousel.css" /> -->
+    </head>
 
-<body>
-    <header id="main-header">
-        <a href="#"><img src="images/shantiko_logo.png" alt="Logotipo de Shantiko"></a>
-        <h1><span>S</span>hanti<span>k</span>o <br><b>Pizzas</b></h1>
-        <nav>
+    <body>
+        <header id="main-header">
+            <a href="#"
+                ><img src="images/shantiko_logo.png" alt="Logotipo de Shantiko"
+            /></a>
+            <h1><span>S</span>hanti<span>k</span>o <br /><b>Pizzas</b></h1>
+            <nav>
+                <ul>
+                    <li><a href="#main-hero" class="menu-item">Home</a></li>
+                    <li>
+                        <a href="#main-about_us" class="menu-item"
+                            >Presentación</a
+                        >
+                    </li>
+                    <li><a href="#main-pizzas" class="menu-item">Pizzas</a></li>
+                    <li>
+                        <a href="#main-shantiko" class="menu-item">Shantiko</a>
+                    </li>
+                    <li>
+                        <a href="#main-footer" class="menu-item">Contacto</a>
+                    </li>
+                </ul>
+                <!-- <a href="#" class="menu-item" onclick="closeMenu()">Close</a> -->
+            </nav>
+            <button onclick="toggleMenu()" id="menu_button">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 -960 960 960"
+                    class="menu_button_open"
+                >
+                    <path
+                        d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+                    />
+                </svg>
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 -960 960 960"
+                    class="menu_button_close"
+                >
+                    <path
+                        d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+                    />
+                </svg>
+            </button>
+        </header>
+        <!-- Navigation Menu -->
+        <nav id="menu">
             <ul>
                 <li><a href="#main-hero" class="menu-item">Home</a></li>
-                <li><a href="#main-about_us" class="menu-item">Presentación</a></li>
+                <li>
+                    <a href="#main-about_us" class="menu-item">Presentación</a>
+                </li>
                 <li><a href="#main-pizzas" class="menu-item">Pizzas</a></li>
                 <li><a href="#main-shantiko" class="menu-item">Shantiko</a></li>
                 <li><a href="#main-footer" class="menu-item">Contacto</a></li>
             </ul>
             <!-- <a href="#" class="menu-item" onclick="closeMenu()">Close</a> -->
         </nav>
-        <button onclick="toggleMenu()" id="menu_button">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" class="menu_button_open">
-                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" class="menu_button_close">
-                <path
-                    d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
-            </svg>
-        </button>
-    </header>
-    <!-- Navigation Menu -->
-    <nav id="menu">
-        <ul>
-            <li><a href="#main-hero" class="menu-item">Home</a></li>
-            <li><a href="#main-about_us" class="menu-item">Presentación</a></li>
-            <li><a href="#main-pizzas" class="menu-item">Pizzas</a></li>
-            <li><a href="#main-shantiko" class="menu-item">Shantiko</a></li>
-            <li><a href="#main-footer" class="menu-item">Contacto</a></li>
-        </ul>
-        <!-- <a href="#" class="menu-item" onclick="closeMenu()">Close</a> -->
-    </nav>
-    <main>
-        <!-- hero video -->
-        <section id="main-hero">
-            <img src="images/shantiko_hero_image_v1.jpg" alt="Imagen de fondo de la página principal">
-        </section>
-        <!-- about us -->
-        <section id="main-about_us">
-            Presentación
+        <main>
+            <!-- hero video -->
+            <section id="main-hero">
+                <img
+                    src="images/shantiko_hero_image_v1.jpg"
+                    alt="Imagen de fondo de la página principal"
+                />
+            </section>
+            <!-- about us -->
+            <section id="main-about_us">
+                Presentación Somos Marita y Estela, creadoras de Shantiko
+                Pizzas. Este proyecto sobre ruedas nace entre volcanes, después
+                de más de una década ofreciendo pizzas en un emblemático pueblo
+                de la Garrotxa. Nuestro espíritu aventurero nos impulsó a llevar
+                nuestro oficio como pizzaiolas a nuevos horizontes. Nuestras
+                pizzas ,elaboradas con harinas ecológicas, son hechas al momento
+                de forma artesanal. Nos gusta cuidar de cada detalle del
+                proceso: - Eligiendo productos frescos y de calidad - Apostando
+                por fermentaciones largas de la masa para hacerla más saludable
+                y fácil de digerir - Cocinando al horno de leña para conseguir
+                ese sabor y textura inconfundible de una pizza hecha al fuego El
+                amor por lo que hacemos y la motivación de nutrir con sabrosos y
+                buenos alimentos de la tierra son los ingredientes esenciales de
+                nuestras pizzas.
+            </section>
+            <!-- pizzas -->
+            <section id="main-pizzas">
+                <h2>Nuestras Pizzas</h2>
+                <p>
+                    Adaptamos nuestra carta a las necesidades de cada evento y
+                    solemos ofrecer pizzas del día según los productos de
+                    temporada.
+                </p>
 
-            Somos Marita y Estela, creadoras de Shantiko Pizzas. Este proyecto sobre ruedas nace entre volcanes, después
-            de más de una década ofreciendo pizzas en un emblemático pueblo de la Garrotxa. Nuestro espíritu aventurero
-            nos impulsó a llevar nuestro oficio como pizzaiolas a nuevos horizontes.
+                <h3>BÁSICOS</h3>
+                MARGARITA - Salsa de tomate, mozzarella, aceite de albahaca
+                (opcional) SOTABOSC - Salsa de tomate, mozzarella, Jamón dulce y
+                champiñones 4FORMATGES - Salsa de tomate, mozzarella, brie,
+                provolone y roquefort SALAMI - Salsa de tomate, mozzarella y
+                salami
 
-            Nuestras pizzas ,elaboradas con harinas ecológicas, son hechas al momento de forma artesanal. Nos gusta
-            cuidar de cada detalle del proceso:
+                <h3>CARNÍVORAS</h3>
+                DIAVOLA - Salsa de tomate, mozzarella,guiso de ternera picante y
+                cebolla PEROLA - Salsa de tomate, mozzarella, pera, jamón
+                serrano,gorgonzola y rúcula MEXICANA - Salsa de tomate,
+                mozzarella, pollo y maíz ROC - Salsa de tomate, mozzarella,
+                bacón,cebolla, champiñones y roquefort CARBONARA - Nata,
+                mozzarella,cebolla,champiñones y bacón. TIRRENA - Salsa de
+                tomate, mozzarella,cebolla,atún, huevo duro y olivas negras
+                NAPOLITANA - Salsa de tomate, mozzarella,anchoas,cherrys y
+                olivas negras.
 
-            - Eligiendo productos frescos y de calidad
-            - Apostando por fermentaciones largas de la masa para hacerla más saludable y fácil de digerir
-            - Cocinando al horno de leña para conseguir ese sabor y textura inconfundible de una pizza hecha al fuego
+                <h3>VEGETARIANAS</h3>
+                NEVADA - Nata,espinaca, queso de cabra, miel y nueces CARROMATO
+                - Salsa de tomate, mozzarella,champiñones, tomate seco, queso de
+                cabra y rúcula MERAKI - Salsa de tomate, mozzarella, berenjena
+                asada, cherrys, parmesano, olivas negras ESCALIVADA - Pimiento,
+                berenjena y cebolla escalivados, queso de cabra y olivas negras
 
-            El amor por lo que hacemos y la motivación de nutrir con sabrosos y buenos alimentos de la tierra son los
-            ingredientes esenciales de nuestras pizzas.
-        </section>
-        <!-- pizzas -->
-        <section id="main-pizzas">
-            <h2>Nuestras Pizzas</h2>
-            <p>Adaptamos nuestra carta a las necesidades de cada evento y solemos ofrecer pizzas del día según los
-                productos de temporada.</p>
+                <h3>BURRATAS SELECTION</h3>
 
+                CALA BURRA - Nata,espinacas,calabaza, burrata, huevo,aceite de
+                romero, salvia y limón BURRATA CAPRESSE - Salsa de tomate,
+                burrata,cherrys,albahaca, olivas negras y rúcula.
 
-            <h3>BÁSICOS</h3>
-            MARGARITA - Salsa de tomate, mozzarella, aceite de albahaca (opcional)
-            SOTABOSC - Salsa de tomate, mozzarella, Jamón dulce y champiñones
-            4FORMATGES - Salsa de tomate, mozzarella, brie, provolone y roquefort
-            SALAMI - Salsa de tomate, mozzarella y salami
+                <h3>VEGANAS</h3>
 
-            <h3>CARNÍVORAS</h3>
-            DIAVOLA - Salsa de tomate, mozzarella,guiso de ternera picante y cebolla
-            PEROLA - Salsa de tomate, mozzarella, pera, jamón serrano,gorgonzola y rúcula
-            MEXICANA - Salsa de tomate, mozzarella, pollo y maíz
-            ROC - Salsa de tomate, mozzarella, bacón,cebolla, champiñones y roquefort
-            CARBONARA - Nata, mozzarella,cebolla,champiñones y bacón.
-            TIRRENA - Salsa de tomate, mozzarella,cebolla,atún, huevo duro y olivas negras
-            NAPOLITANA - Salsa de tomate, mozzarella,anchoas,cherrys y olivas negras.
-
-            <h3>VEGETARIANAS</h3>
-            NEVADA - Nata,espinaca, queso de cabra, miel y nueces
-            CARROMATO - Salsa de tomate, mozzarella,champiñones, tomate seco, queso de cabra y rúcula
-            MERAKI - Salsa de tomate, mozzarella, berenjena asada, cherrys, parmesano, olivas negras
-            ESCALIVADA - Pimiento, berenjena y cebolla escalivados, queso de cabra y olivas negras
-
-            <h3>BURRATAS SELECTION</h3>
-
-            CALA BURRA - Nata,espinacas,calabaza, burrata, huevo,aceite de romero, salvia y limón
-            BURRATA CAPRESSE - Salsa de tomate, burrata,cherrys,albahaca, olivas negras y rúcula.
-
-            <h3>VEGANAS</h3>
-
-            CARROMATO, MERAKI, ESCALIVADA y CAPRESSE se pueden adaptar con queso vegano.
-        </section>
-        <section id="carousel">
-            <div class="carousel" aria-label="Gallery">
-                <ol class="carousel__viewport">
-                    <li id="carousel__slide1" tabindex="0" class="carousel__slide">
-                        <div class="carousel__snapper">
-                            <div class="polaroid">
-                                <img src="images/pizza.webp" alt="pizza image">
-                                <div class="polaroid_title">Pizza</div>
+                CARROMATO, MERAKI, ESCALIVADA y CAPRESSE se pueden adaptar con
+                queso vegano.
+            </section>
+            https://codepen.io/simplicitytree/pen/LvvzPq
+            <section>
+                <div class="glide" id="pizza-glide">
+                    <div class="glide__track" data-glide-el="track">
+                        <ul class="glide__slides">
+                            <li class="glide__slide">
+                                <div class="polaroid">
+                                    <img
+                                        src="images/pizza.webp"
+                                        alt="pizza image"
+                                    />
+                                    <div class="polaroid_title">Pizza1</div>
+                                </div>
+                            </li>
+                            <li class="glide__slide">
+                                <div class="polaroid">
+                                    <img
+                                        src="images/pizza.webp"
+                                        alt="pizza image"
+                                    />
+                                    <div class="polaroid_title">Pizza2</div>
+                                </div>
+                            </li>
+                            <li class="glide__slide">
+                                <div class="polaroid">
+                                    <img
+                                        src="images/pizza.webp"
+                                        alt="pizza image"
+                                    />
+                                    <div class="polaroid_title">Pizza3</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="glide__arrows" data-glide-el="controls">
+                        <button
+                            class="glide__arrow glide__arrow--left"
+                            data-glide-dir="<"
+                        >
+                            ⬅️
+                        </button>
+                        <button
+                            class="glide__arrow glide__arrow--right"
+                            data-glide-dir=">"
+                        >
+                            ➡️
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <section id="carousel">
+                <div class="carousel" aria-label="Gallery">
+                    <ol class="carousel__viewport">
+                        <li
+                            id="carousel__slide1"
+                            tabindex="0"
+                            class="carousel__slide"
+                        >
+                            <div class="carousel__snapper">
+                                <div class="polaroid">
+                                    <img
+                                        src="images/pizza.webp"
+                                        alt="pizza image"
+                                    />
+                                    <div class="polaroid_title">Pizza</div>
+                                </div>
                             </div>
-                        </div>
-                        <a href="#carousel__slide4" class="carousel__prev">Go to last slide</a>
-                        <a href="#carousel__slide2" class="carousel__next">Go to next slide</a>
-                    </li>
-                    <li id="carousel__slide2" tabindex="0" class="carousel__slide">
-                        <div class="carousel__snapper"></div>
-                        <a href="#carousel__slide1" class="carousel__prev">Go to previous slide</a>
-                        <a href="#carousel__slide3" class="carousel__next">Go to next slide</a>
-                    </li>
-                    <li id="carousel__slide3" tabindex="0" class="carousel__slide">
-                        <div class="carousel__snapper"></div>
-                        <a href="#carousel__slide2" class="carousel__prev">Go to previous slide</a>
-                        <a href="#carousel__slide4" class="carousel__next">Go to next slide</a>
-                    </li>
-                    <li id="carousel__slide4" tabindex="0" class="carousel__slide">
-                        <div class="carousel__snapper"></div>
-                        <a href="#carousel__slide3" class="carousel__prev">Go to previous slide</a>
-                        <a href="#carousel__slide1" class="carousel__next">Go to first slide</a>
-                    </li>
-                </ol>
-                <!-- <aside class="carousel__navigation">
+                            <a href="#carousel__slide4" class="carousel__prev"
+                                >Go to last slide</a
+                            >
+                            <a href="#carousel__slide2" class="carousel__next"
+                                >Go to next slide</a
+                            >
+                        </li>
+                        <li
+                            id="carousel__slide2"
+                            tabindex="0"
+                            class="carousel__slide"
+                        >
+                            <div class="carousel__snapper">
+                                <div class="polaroid">
+                                    <img
+                                        src="images/pizza.webp"
+                                        alt="pizza image"
+                                    />
+                                    <div class="polaroid_title">Pizza</div>
+                                </div>
+                            </div>
+                            <a href="#carousel__slide1" class="carousel__prev"
+                                >Go to previous slide</a
+                            >
+                            <a href="#carousel__slide3" class="carousel__next"
+                                >Go to next slide</a
+                            >
+                        </li>
+                        <li
+                            id="carousel__slide3"
+                            tabindex="0"
+                            class="carousel__slide"
+                        >
+                            <div class="carousel__snapper">
+                                <div class="polaroid">
+                                    <img
+                                        src="images/pizza.webp"
+                                        alt="pizza image"
+                                    />
+                                    <div class="polaroid_title">Pizza</div>
+                                </div>
+                            </div>
+                            <a href="#carousel__slide2" class="carousel__prev"
+                                >Go to previous slide</a
+                            >
+                            <a href="#carousel__slide4" class="carousel__next"
+                                >Go to next slide</a
+                            >
+                        </li>
+                        <li
+                            id="carousel__slide4"
+                            tabindex="0"
+                            class="carousel__slide"
+                        >
+                            <div class="carousel__snapper">
+                                <div class="polaroid">
+                                    <img
+                                        src="images/pizza.webp"
+                                        alt="pizza image"
+                                    />
+                                    <div class="polaroid_title">Pizza</div>
+                                </div>
+                            </div>
+                            <a href="#carousel__slide3" class="carousel__prev"
+                                >Go to previous slide</a
+                            >
+                            <a href="#carousel__slide1" class="carousel__next"
+                                >Go to first slide</a
+                            >
+                        </li>
+                    </ol>
+                    <!-- <aside class="carousel__navigation">
                 <ol class="carousel__navigation-list">
                     <li class="carousel__navigation-item">
                         <a href="#carousel__slide1" class="carousel__navigation-button">Go to slide 1</a>
@@ -157,18 +308,40 @@
                     </li>
                 </ol>
             </aside> -->
-            </div>
-        </section>
-        <!-- Shantiko -->
-        <section id="main-shantiko">
-            <p>Para los màs curiosos (origen de nuestro nombre)</p>
-        </section>
-    </main>
-    <footer id="main-footer">
-        <p>Formulario para eventos</p>
-    </footer>
-    <!-- Seccion scripts -->
-    <script src="scripts/scripts.js"></script>
-</body>
-
+                </div>
+            </section>
+            <!-- Shantiko -->
+            <section id="main-shantiko">
+                <p>Para los màs curiosos (origen de nuestro nombre)</p>
+            </section>
+        </main>
+        <footer id="main-footer">
+            <p>Formulario para eventos</p>
+        </footer>
+        <!-- Seccion scripts -->
+        <script src="scripts/scripts.js"></script>
+        <script src="lib/glide/glide.min.js"></script>
+        <script>
+            const glide = new Glide("#pizza-glide", {
+                //type: "carousel",
+                bound: true,
+                perView: 6,
+                breakpoints: {
+                    1600: {
+                        perView: 4
+                    },
+                    900: {
+                        perView: 3
+                    },
+                    600: {
+                        perView: 2
+                    },
+                    330: {
+                        perView: 1
+                    }
+                }
+            });
+            glide.mount();
+        </script>
+    </body>
 </html>
