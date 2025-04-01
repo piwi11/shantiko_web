@@ -1,10 +1,19 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background-color: var(--tertiary-color);
     font-family: "Lato", serif;
+    scroll-behavior: smooth;
+    position:relative;
 }
 #main-header{
     background-color: #fff;
     display: flex;
+    position:fixed;
+    top: 0;
+    width: 100%;
 }
 #main-header>a>img{
     width: 100px;
@@ -40,26 +49,67 @@ body{
 
 
 #main-header>nav{
-    margin-left:auto;
+    margin:auto;
+    display: none;
+    @media (min-width:1024px){
+        display: block;
+    }
 }
 
-#menu_button>span{
-    font-size: 40px;
-    color: var(--accent-color) ;
+
+#main-header nav>ul{
+    list-style-type:none;
+    display: flex;
+    justify-content: start;
 }
+
+#main-header>nav>ul>li>.menu-item:hover{
+    color: var(--accent-color);
+    @media (orientation:portrait){
+        color: var(--primary-color-dark);
+    }
+}
+
+
+/* #main-header nav>ul>li{
+    
+} */
 #menu_button{
     background: transparent;
     padding: 0px 15px;
     border: 0px solid transparent;
     transition: transform 0.3s;
+    display: block;
 }
+
+@media (min-width:1024px){
+    #menu_button{
+        display: none;
+    }
+}
+
 #menu_button:hover{
     cursor: pointer;
     transform: scale(1.1);
-
+}
+#menu_button>svg{
+    width: 40px;
+    height: 40px;
+    fill: var(--accent-color) ;
+    
 }
 
+.menu_button_close{
+    display: none;
+}
 
+#menu_button.active .menu_button_open {
+    display: none;
+}
+
+#menu_button.active .menu_button_close {
+    display: block;
+}
 
 #menu {
     position: fixed;
@@ -93,6 +143,24 @@ body{
 }
 .menu-item:hover {
     color: var(--tertiary-color);
+}
+
+body>main>section{
+    min-height: 100dvh;
+    padding: 20px;
+}
+
+#main-hero{
+    min-height: auto;
+    padding: 0;
+}
+
+#main-pizzas{
+    background-color: var(--primary-color-light);
+}
+
+#main-footer{
+    background-color: var(--secondary-color);
 }
 
 :root{
