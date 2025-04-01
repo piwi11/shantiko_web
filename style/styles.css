@@ -151,6 +151,10 @@ body>main>section{
     padding: 20px;
 }
 
+#carousel{
+    min-height: auto;
+}
+
 #main-hero{
     min-height: auto;
     padding: 0;
@@ -162,6 +166,26 @@ body>main>section{
 
 #main-footer{
     background-color: var(--secondary-color);
+}
+
+
+.polaroid {
+    background-color: white;
+    padding: 23px 23px 51px;
+    box-sizing: content-box;
+    width: 400px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.polaroid_title{
+    position: absolute;
+    bottom: 0;
+    left: 25px;
+    font-family: "Kavivanar", "Averia Libre", serif;
+    font-weight: 700;
+    line-height: 51px;
+    font-size: 24px;
 }
 
 :root{
