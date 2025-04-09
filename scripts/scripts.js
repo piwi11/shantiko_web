@@ -14,7 +14,7 @@ function toggleMenuButton() {
     menu_button.classList.toggle("active");
 }
 
-const polaroids = document.querySelectorAll(".polaroid");
-Array.from(polaroids).forEach(function (element) {
-    element.addEventListener("click", () => console.log(this));
+const flips = document.querySelectorAll(".flip-container");
+Array.from(flips).forEach(function (element) {
+    element.addEventListener("click", () => element.classList.toggle("active"));
 });

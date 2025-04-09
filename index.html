@@ -18,6 +18,7 @@
         />
         <link rel="stylesheet" type="text/css" href="style/fonts.css" />
         <link rel="stylesheet" type="text/css" href="style/styles.css" />
+        <link rel="stylesheet" type="text/css" href="style/flip_card.css" />
 
         <!-- Required Core Stylesheet -->
         <link rel="stylesheet" href="lib/glide/glide.core.min.css" />
@@ -154,18 +155,42 @@
                 CARROMATO, MERAKI, ESCALIVADA y CAPRESSE se pueden adaptar con
                 queso vegano.
             </section>
-            https://codepen.io/simplicitytree/pen/LvvzPq
             <section>
                 <div class="glide" id="pizza-glide">
                     <div class="glide__track" data-glide-el="track">
                         <ul class="glide__slides">
                             <li class="glide__slide">
-                                <div class="polaroid">
-                                    <img
-                                        src="images/pizza.webp"
-                                        alt="pizza image"
-                                    />
-                                    <div class="polaroid_title">Pizza1</div>
+                                <div class="flip-container">
+                                    <div class="card">
+                                        <div class="front">
+                                            <div class="polaroid">
+                                                <img
+                                                    src="images/pizza.webp"
+                                                    alt="pizza image"
+                                                />
+                                                <div class="polaroid_title">
+                                                    <figure>
+                                                        <figcaption>
+                                                            MARGARITA
+                                                        </figcaption>
+                                                    </figure>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="back polaroid">
+                                            <h4 class="polaroid_title">
+                                                MARGARITA
+                                            </h4>
+                                            <ul>
+                                                <li>Salsa de tomate</li>
+                                                <li>Mozzarella</li>
+                                                <li>
+                                                    Aceite de Albahaca
+                                                    (opcional)
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                 </div>
                             </li>
                             <li class="glide__slide">
@@ -202,112 +227,6 @@
                             →
                         </button>
                     </div>
-                </div>
-            </section>
-            <section id="carousel">
-                <div class="carousel" aria-label="Gallery">
-                    <ol class="carousel__viewport">
-                        <li
-                            id="carousel__slide1"
-                            tabindex="0"
-                            class="carousel__slide"
-                        >
-                            <div class="carousel__snapper">
-                                <div class="polaroid">
-                                    <img
-                                        src="images/pizza.webp"
-                                        alt="pizza image"
-                                    />
-                                    <div class="polaroid_title">Pizza</div>
-                                </div>
-                            </div>
-                            <a href="#carousel__slide4" class="carousel__prev"
-                                >Go to last slide</a
-                            >
-                            <a href="#carousel__slide2" class="carousel__next"
-                                >Go to next slide</a
-                            >
-                        </li>
-                        <li
-                            id="carousel__slide2"
-                            tabindex="0"
-                            class="carousel__slide"
-                        >
-                            <div class="carousel__snapper">
-                                <div class="polaroid">
-                                    <img
-                                        src="images/pizza.webp"
-                                        alt="pizza image"
-                                    />
-                                    <div class="polaroid_title">Pizza</div>
-                                </div>
-                            </div>
-                            <a href="#carousel__slide1" class="carousel__prev"
-                                >Go to previous slide</a
-                            >
-                            <a href="#carousel__slide3" class="carousel__next"
-                                >Go to next slide</a
-                            >
-                        </li>
-                        <li
-                            id="carousel__slide3"
-                            tabindex="0"
-                            class="carousel__slide"
-                        >
-                            <div class="carousel__snapper">
-                                <div class="polaroid">
-                                    <img
-                                        src="images/pizza.webp"
-                                        alt="pizza image"
-                                    />
-                                    <div class="polaroid_title">Pizza</div>
-                                </div>
-                            </div>
-                            <a href="#carousel__slide2" class="carousel__prev"
-                                >Go to previous slide</a
-                            >
-                            <a href="#carousel__slide4" class="carousel__next"
-                                >Go to next slide</a
-                            >
-                        </li>
-                        <li
-                            id="carousel__slide4"
-                            tabindex="0"
-                            class="carousel__slide"
-                        >
-                            <div class="carousel__snapper">
-                                <div class="polaroid">
-                                    <img
-                                        src="images/pizza.webp"
-                                        alt="pizza image"
-                                    />
-                                    <div class="polaroid_title">Pizza</div>
-                                </div>
-                            </div>
-                            <a href="#carousel__slide3" class="carousel__prev"
-                                >Go to previous slide</a
-                            >
-                            <a href="#carousel__slide1" class="carousel__next"
-                                >Go to first slide</a
-                            >
-                        </li>
-                    </ol>
-                    <!-- <aside class="carousel__navigation">
-                <ol class="carousel__navigation-list">
-                    <li class="carousel__navigation-item">
-                        <a href="#carousel__slide1" class="carousel__navigation-button">Go to slide 1</a>
-                    </li>
-                    <li class="carousel__navigation-item">
-                        <a href="#carousel__slide2" class="carousel__navigation-button">Go to slide 2</a>
-                    </li>
-                    <li class="carousel__navigation-item">
-                        <a href="#carousel__slide3" class="carousel__navigation-button">Go to slide 3</a>
-                    </li>
-                    <li class="carousel__navigation-item">
-                        <a href="#carousel__slide4" class="carousel__navigation-button">Go to slide 4</a>
-                    </li>
-                </ol>
-            </aside> -->
                 </div>
             </section>
             <!-- Shantiko -->

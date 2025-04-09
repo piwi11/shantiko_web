@@ -164,29 +164,47 @@ body > main > section {
 }
 
 .polaroid {
-    background-color: white;
+    background-color: var(--tertiary-color);
     padding: 5% 5% 10%;
     box-sizing: content-box;
     width: 100%;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
     position: relative;
+    text-align: left;
 }
 
 .polaroid_title {
+    font-family: "Kavivanar", "Averia Libre", serif;
+    font-weight: 700;
+    line-height: 2.6rem;
+    font-size: 2rem;
+}
+
+.front .polaroid_title {
     position: absolute;
     bottom: 0;
     left: 5%;
-    font-family: "Kavivanar", "Averia Libre", serif;
-    font-weight: 700;
-    line-height: 1.6rem;
     font-size: 1rem;
+    line-height: 1.6rem;
 }
 
-.polaroid:hover {
+.polaroid ul {
+    margin: 5px;
+    padding: 5px;
+}
+
+.polaroid ul > li {
+    font-family: "Lato", serif;
+    font-weight: 400;
+    line-height: 1.6;
+    font-size: 1.2rem;
+}
+
+/* .polaroid:hover {
     transform: scale(1.02);
     box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
+} */
 
 :root {
     --primary-color: #379184;
