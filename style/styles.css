@@ -171,6 +171,13 @@ body > main > section {
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
     position: relative;
     text-align: left;
+    cursor: pointer;
+}
+
+.glide--swipeable .polaroid {
+    cursor: grab;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
 }
 
 .polaroid_title {
@@ -198,9 +205,19 @@ body > main > section {
     right: 5%;
 }
 
-.polaroid_link:hover {
+.polaroid_link:hover,
+.polaroid_link:hover span {
     text-decoration: underline;
     cursor: pointer;
+}
+
+.polaroid_link span {
+    display: none;
+}
+@media (min-width: 1440px) {
+    .polaroid_link span {
+        display: inline-block;
+    }
 }
 
 .polaroid ul {
