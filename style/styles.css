@@ -4,7 +4,7 @@ html {
 
 body {
     background-color: var(--tertiary-color);
-    font-family: "Lato", serif;
+    font-family: var(--text-font);
     scroll-behavior: smooth;
     position: relative;
 }
@@ -26,7 +26,7 @@ body {
 }
 #main-header > h1 {
     margin: auto auto auto 20px;
-    font-family: "Kavivanar", "Averia Libre", serif;
+    font-family: var(--title-font);
     font-weight: 700;
     line-height: 1;
     font-size: 30px;
@@ -174,7 +174,7 @@ body > main > section {
 }
 
 .polaroid_title {
-    font-family: "Kavivanar", "Averia Libre", serif;
+    font-family: var(--title-font);
     font-weight: 700;
     line-height: 2.6rem;
     font-size: 2rem;
@@ -188,13 +188,28 @@ body > main > section {
     line-height: 1.6rem;
 }
 
+.polaroid_link {
+    font-family: var(--title-font);
+    font-weight: 400;
+    line-height: 1.6rem;
+    font-size: 0.8rem;
+    position: absolute;
+    bottom: 0;
+    right: 5%;
+}
+
+.polaroid_link:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 .polaroid ul {
     margin: 5px;
     padding: 5px;
 }
 
 .polaroid ul > li {
-    font-family: "Lato", serif;
+    font-family: var(--text-font);
     font-weight: 400;
     line-height: 1.6;
     font-size: 1.2rem;
@@ -214,4 +229,7 @@ body > main > section {
     --tertiary-color: #f7ffdd;
     --text-color: #28343e;
     --accent-color: #a33e4d;
+
+    --title-font: "Kavivanar", "Averia Libre", serif;
+    --text-font: "Lato", serif;
 }
