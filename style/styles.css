@@ -5,6 +5,7 @@ html {
 body {
     background-color: var(--tertiary-color);
     font-family: var(--text-font);
+    color: var(--text-color);
     scroll-behavior: smooth;
     position: relative;
 }
@@ -183,8 +184,8 @@ body > main > section {
 .polaroid_title {
     font-family: var(--title-font);
     font-weight: 700;
-    line-height: 2.6rem;
-    font-size: 2rem;
+    line-height: 1.6rem;
+    font-size: 1.2rem;
 }
 
 .front .polaroid_title {
@@ -192,7 +193,6 @@ body > main > section {
     bottom: 0;
     left: 5%;
     font-size: 1rem;
-    line-height: 1.6rem;
 }
 
 .polaroid_link {
@@ -221,22 +221,21 @@ body > main > section {
 }
 
 .polaroid ul {
-    margin: 5px;
-    padding: 5px;
+    padding: 5px 0 0 16px;
 }
 
 .polaroid ul > li {
     font-family: var(--text-font);
-    font-weight: 400;
+    font-weight: 600;
     line-height: 1.6;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
-/* .polaroid:hover {
-    transform: scale(1.02);
-    box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-} */
+.polaroid ul > li::marker {
+    content: "\2714   "; /*"ø  "; "\1F355  ";*/
+    font-size: 0.8rem;
+    color: var(--primary-color);
+}
 
 :root {
     --primary-color: #379184;
