@@ -1,31 +1,33 @@
-html{
+html {
     scroll-behavior: smooth;
 }
 
-body{
+body {
     background-color: var(--tertiary-color);
-    font-family: "Lato", serif;
+    font-family: var(--text-font);
+    color: var(--text-color);
     scroll-behavior: smooth;
-    position:relative;
+    position: relative;
 }
-#main-header{
+#main-header {
     background-color: #fff;
     display: flex;
-    position:fixed;
+    position: fixed;
     top: 0;
     width: 100%;
+    z-index: 9000;
 }
-#main-header>a>img{
+#main-header > a > img {
     width: 100px;
     height: 100px;
     cursor: pointer;
 }
-#main-header>a>img:active{
+#main-header > a > img:active {
     cursor: grab;
 }
-#main-header>h1{
+#main-header > h1 {
     margin: auto auto auto 20px;
-    font-family: "Kavivanar", "Averia Libre", serif;
+    font-family: var(--title-font);
     font-weight: 700;
     line-height: 1;
     font-size: 30px;
@@ -34,47 +36,44 @@ body{
     transition: transform 4s ease;
 }
 
-#main-header>h1:hover{
+#main-header > h1:hover {
     transform: rotate(5turn);
 }
 
-#main-header>h1>b{
+#main-header > h1 > b {
     font-size: 43px;
     font-weight: 500;
 }
 
-#main-header>h1>span{
+#main-header > h1 > span {
     font-size: 37px;
 }
 
-
-#main-header>nav{
-    margin:auto;
+#main-header > nav {
+    margin: auto;
     display: none;
-    @media (min-width:1024px){
+    @media (min-width: 1024px) {
         display: block;
     }
 }
 
-
-#main-header nav>ul{
-    list-style-type:none;
+#main-header nav > ul {
+    list-style-type: none;
     display: flex;
     justify-content: start;
 }
 
-#main-header>nav>ul>li>.menu-item:hover{
+#main-header > nav > ul > li > .menu-item:hover {
     color: var(--accent-color);
-    @media (orientation:portrait){
+    @media (orientation: portrait) {
         color: var(--primary-color-dark);
     }
 }
 
-
 /* #main-header nav>ul>li{
     
 } */
-#menu_button{
+#menu_button {
     background: transparent;
     padding: 0px 15px;
     border: 0px solid transparent;
@@ -82,24 +81,23 @@ body{
     display: block;
 }
 
-@media (min-width:1024px){
-    #menu_button{
+@media (min-width: 1024px) {
+    #menu_button {
         display: none;
     }
 }
 
-#menu_button:hover{
+#menu_button:hover {
     cursor: pointer;
     transform: scale(1.1);
 }
-#menu_button>svg{
+#menu_button > svg {
     width: 40px;
     height: 40px;
-    fill: var(--accent-color) ;
-    
+    fill: var(--accent-color);
 }
 
-.menu_button_close{
+.menu_button_close {
     display: none;
 }
 
@@ -119,15 +117,14 @@ body{
     width: 250px; /* Adjust as needed */
     background-color: var(--primary-color-dark);
     transition: left 0.3s ease; /* Only transition the left property */
-    z-index: 1000; /* Ensure it's above other content */
+    z-index: 9999; /* Ensure it's above other content */
 }
-
 
 #menu.active {
     left: 0; /* Slide the menu into view */
 }
 
-#menu>ul{
+#menu > ul {
     list-style-type: none;
     padding: 16px 3px;
 }
@@ -145,30 +142,110 @@ body{
     color: var(--tertiary-color);
 }
 
-body>main>section{
+body > main > section {
     min-height: 100dvh;
     padding: 20px;
 }
 
-#main-hero{
+#carousel {
+    min-height: auto;
+}
+
+#main-hero {
     min-height: auto;
     padding: 0;
 }
 
-#main-pizzas{
+#main-pizzas {
     background-color: var(--primary-color-light);
 }
 
-#main-footer{
+#main-footer {
     background-color: var(--secondary-color);
 }
 
-:root{
+.polaroid {
+    background-color: var(--tertiary-color);
+    padding: 5% 5% 10%;
+    box-sizing: content-box;
+    width: 100%;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+    position: relative;
+    text-align: left;
+    cursor: pointer;
+}
+
+.glide--swipeable .polaroid {
+    cursor: grab;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
+}
+
+.polaroid_title {
+    font-family: var(--title-font);
+    font-weight: 700;
+    line-height: 1.6rem;
+    font-size: 1.2rem;
+}
+
+.front .polaroid_title {
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+    font-size: 1rem;
+}
+
+.polaroid_link {
+    font-family: var(--title-font);
+    font-weight: 400;
+    line-height: 1.6rem;
+    font-size: 0.8rem;
+    position: absolute;
+    bottom: 0;
+    right: 5%;
+}
+
+.polaroid_link:hover,
+.polaroid_link:hover span {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.polaroid_link span {
+    display: none;
+}
+@media (min-width: 1440px) {
+    .polaroid_link span {
+        display: inline-block;
+    }
+}
+
+.polaroid ul {
+    padding: 5px 0 0 16px;
+}
+
+.polaroid ul > li {
+    font-family: var(--text-font);
+    font-weight: 600;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+.polaroid ul > li::marker {
+    content: "\2714   "; /*"ø  "; "\1F355  ";*/
+    font-size: 0.8rem;
+    color: var(--primary-color);
+}
+
+:root {
     --primary-color: #379184;
-    --primary-color-light: #89D2C7;
-    --primary-color-dark: #112C28;
-    --secondary-color: #DBA159;
-    --tertiary-color: #F7FFDD;
-    --text-color: #28343E;
-    --accent-color: #A33E4D;
+    --primary-color-light: #89d2c7;
+    --primary-color-dark: #112c28;
+    --secondary-color: #dba159;
+    --tertiary-color: #f7ffdd;
+    --text-color: #28343e;
+    --accent-color: #a33e4d;
+
+    --title-font: "Kavivanar", "Averia Libre", serif;
+    --text-font: "Lato", serif;
 }
