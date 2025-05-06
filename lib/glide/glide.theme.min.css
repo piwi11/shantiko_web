@@ -6,7 +6,7 @@
     color: white;
     text-transform: uppercase;
     padding: 9px 12px;
-    background-color: transparent;
+    background-color: #a33e4d;
     border: 2px solid rgba(255, 255, 255, 0.5);
     border-radius: 4px;
     box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.1);
@@ -23,11 +23,14 @@
 .glide__arrow:hover {
     border-color: white;
 }
+.glide__arrow[disabled] {
+    display: none;
+}
 .glide__arrow--left {
-    left: 2em;
+    left: -0.6em;
 }
 .glide__arrow--right {
-    right: 2em;
+    right: -0.6em;
 }
 .glide__arrow--disabled {
     opacity: 0.33;
@@ -76,7 +79,7 @@
     cursor: -webkit-grabbing;
 }
 .glide__slides {
-    padding: 15px 0;
+    padding: 25px 0;
 }
 
 /*# sourceMappingURL=glide.theme.css.map */
