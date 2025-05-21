@@ -142,9 +142,34 @@ body {
     color: var(--tertiary-color);
 }
 
-body > main > section {
-    min-height: 100dvh;
-    padding: 20px;
+body > main > section,
+body > footer {
+    padding: 120px 20px 20px 20px;
+}
+
+body > main > section h4,
+body > footer h4 {
+    margin-bottom: 1rem;
+    font-family: var(--title-font);
+    font-weight: 700;
+    line-height: 1.6;
+    font-size: 2.4rem;
+    color: var(--primary-color-dark);
+    font-variant-caps: small-caps;
+}
+
+.content_text {
+    margin-bottom: 0.4rem;
+    font-family: var(--text-font);
+    font-weight: 600;
+    line-height: 1.4;
+    font-size: 1.6rem;
+    color: var(--text-color);
+}
+
+.content_wrapper {
+    max-width: 1200px;
+    margin: auto;
 }
 
 #carousel {
@@ -235,6 +260,60 @@ body > main > section {
     content: "\2714   "; /*"ø  "; "\1F355  ";*/
     font-size: 0.8rem;
     color: var(--primary-color);
+}
+
+#footer_cols {
+    display: flex;
+    flex-direction: column;
+    align-items: space-around;
+    gap: 16px;
+}
+
+@media (min-width: 1024px) {
+    #footer_cols {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+#footer_cols > * {
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+#footer_form {
+    display: flex;
+    justify-content: center;
+}
+
+#footer_social a {
+    padding: 6px 0;
+    display: flex;
+    gap: 8px;
+    text-decoration: none;
+    color: var(--text-color);
+    transition: all 0.5s;
+}
+
+#footer_social a img {
+    height: 40px;
+}
+
+#footer_social a span {
+    font-size: 1.25rem;
+    line-height: 40px;
+}
+
+#footer_social a:hover {
+    transform: scale(1.2);
+    transition: all 0.5s;
+    color: var(--accent-color);
+}
+
+#footer_social a:active {
+    transform: scale(0.8);
+    transform-origin: bottom left;
+    transition: all 0.5s;
 }
 
 :root {
