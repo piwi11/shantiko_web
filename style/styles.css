@@ -158,12 +158,22 @@ body > footer h4 {
     font-variant-caps: small-caps;
 }
 
+body > main > section h5 {
+    margin: 25px 0 0;
+    font-family: var(--title-font);
+    font-weight: 700;
+    line-height: 1.6;
+    font-size: 1.6rem;
+    color: var(--primary-color-dark);
+    font-variant-caps: small-caps;
+}
+
 .content_text {
     margin-bottom: 0.4rem;
     font-family: var(--text-font);
     font-weight: 600;
     line-height: 1.4;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     color: var(--text-color);
 }
 
@@ -314,6 +324,17 @@ body > footer h4 {
     transform: scale(0.8);
     transform-origin: bottom left;
     transition: all 0.5s;
+}
+
+.title-font {
+    font-family: var(--title-font);
+}
+.text-primary {
+    color: var(--primary-color);
+}
+.font-variant-logo {
+    font-variant: small-caps;
+    font-style: normal;
 }
 
 :root {
