@@ -4,7 +4,11 @@
         <title>Shantiko Pizzas</title>
         <meta name="description" content="Foodtruck de pizzas de la Garrotxa" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" type="image/png" href="media/images/shantiko_logo.png" />
+        <link
+            rel="icon"
+            type="image/png"
+            href="media/images/shantiko_logo.png"
+        />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link rel="stylesheet" type="text/css" href="style/reset.css" />
@@ -30,7 +34,9 @@
     <body>
         <header id="main-header">
             <a href="#"
-                ><img src="media/images/shantiko_logo.png" alt="Logotipo de Shantiko"
+                ><img
+                    src="media/images/shantiko_logo.png"
+                    alt="Logotipo de Shantiko"
             /></a>
             <h1><span>S</span>hanti<span>k</span>o <br /><b>Pizzas</b></h1>
             <nav>
@@ -88,10 +94,68 @@
         <main>
             <!-- hero video -->
             <section id="main-hero">
-				<img
-                    src="media/images/shantiko_hero_image_v1.jpg"
-                    alt="Imagen de fondo de la página principal"
-                />
+                <video
+                    id="hero-video"
+                    class="full-width-video"
+                    loop
+                    autoplay
+                    playsinline
+                    loop
+                    muted
+                    data-desktop-src="https://cdn.glitch.me/94aeb0f1-3796-4bdf-acdd-ccba5a23cfbf%2Fdesktop.mp4?v=1"
+                    data-desktop-poster="https://cdn.glitch.me/94aeb0f1-3796-4bdf-acdd-ccba5a23cfbf%2Fdesktop.jpg?v=1635523309978"
+                    data-mobile-src="https://cdn.glitch.me/94aeb0f1-3796-4bdf-acdd-ccba5a23cfbf%2Fmobile.mp4?v=1"
+                    data-mobile-poster="https://cdn.glitch.me/94aeb0f1-3796-4bdf-acdd-ccba5a23cfbf%2Fmobile.jpg?v=1635523309850"
+                ></video>
+                <script>
+                    /* define our wide breakpoint for the desktop video - this must match the CSS and preloads! */
+                    const WIDE_VIEWPORT = 480;
+                    /* define a match on the media query for us to share logic with CSS in JS */
+                    const wideViewport = window.matchMedia(
+                        `(min-width: ${WIDE_VIEWPORT}px)`
+                    );
+                    /* define a minimum downlink bandwidth to show the video */
+                    const MIN_DOWNLINK = 1; // Slow 3G ~~ 0.4, Fast 3G ~~ 1.4
+                    function resizeVideo(wideViewport) {
+                        let videoEl = document.getElementById("hero-video");
+                        // default to mobile video source and poster
+                        let src = videoEl.dataset.mobileSrc;
+                        let poster = videoEl.dataset.mobilePoster;
+                        let widthDisplay = "MOBILE";
+                        if (wideViewport.matches) {
+                            // override for desktop if the media query for a wide vieport matches
+                            src = videoEl.dataset.desktopSrc;
+                            poster = videoEl.dataset.desktopPoster;
+                            widthDisplay = "DESKTOP";
+                        }
+                        let downlink = MIN_DOWNLINK;
+                        try {
+                            downlink = navigator.connection.downlink;
+                        } catch (e) {
+                            console.log(`Unable to determine downlink`);
+                        }
+                        if (videoEl.src !== src) {
+                            // only override values if they differ
+                            if (downlink >= MIN_DOWNLINK) {
+                                videoEl.src = src;
+                                widthDisplay += " - FAST";
+                                console.log(
+                                    `Detected bandwidth (${downlink}Mbps) greater than threshold (${MIN_DOWNLINK}Mbps) - showing video`
+                                );
+                            } else {
+                                widthDisplay += " - SLOW";
+                                console.log(
+                                    `Not showing video due to low bandwidth`
+                                );
+                            }
+                            videoEl.poster = poster;
+                        }
+                        document.getElementById("width-display").textContent =
+                            widthDisplay;
+                    }
+                    wideViewport.addListener(resizeVideo);
+                    resizeVideo(wideViewport);
+                </script>
                 <div class="content_wrapper">
                     <div class="hero_text">
                         <h2>Shantiko Pizzas</h2>
@@ -103,57 +167,56 @@
                         <a href="#main-pizzas" class="button">Ver Pizzas</a>
                     </div>
                 </div>
-                <!-- <video
-					autoplay
-					muted
-					loop
-					playsinline
-					id="hero-video"
-				>
-					<source src="videos/hero.mp4" type="video/mp4" />
-					Your browser does not support the video tag.
-				</video> -->
             </section>
             <!-- about us -->
             <section id="main-about_us">
                 <div class="content_wrapper">
                     <h4>Presentación</h4>
                     <p class="content_text">
-                        Somos <b>Marita</b> y <b>Estela</b>, creadoras de <em class="title-font text-primary font-variant-logo">ShantiKo PIZZAS</em>.
-                        <br />Este proyecto sobre ruedas nace entre volcanes, después de más de una década ofreciendo pizzas en un emblemático pueblo de la Garrotxa. 
-						<br />Nuestro espíritu aventurero nos impulsó a llevar nuestro oficio como pizzaiolas a nuevos horizontes. 
+                        Somos <b>Marita</b> y <b>Estela</b>, creadoras de
+                        <em class="title-font text-primary font-variant-logo"
+                            >ShantiKo PIZZAS</em
+                        >. <br />Este proyecto sobre ruedas nace entre volcanes,
+                        después de más de una década ofreciendo pizzas en un
+                        emblemático pueblo de la Garrotxa. <br />Nuestro
+                        espíritu aventurero nos impulsó a llevar nuestro oficio
+                        como pizzaiolas a nuevos horizontes.
+                    </p>
                     <p class="content_text">
-                        Nuestras pizzas, elaboradas con harinas ecológicas, son hechas al momento de forma artesanal.
-						<br />Nos gusta cuidar de cada detalle del proceso:
-						<ul class="content_text">
-							<li>Eligiendo productos frescos y de calidad.</li>
-							<li>Apostando por
-								fermentaciones largas de la masa para hacerla más
-								saludable y fácil de digerir.</li>
-							<li>Cocinando al horno de
-								leña para conseguir ese sabor y textura inconfundible de
-								una pizza hecha al fuego</li>
-						</ul> 
-					</p>
-					<p class="content_text">El amor por lo que hacemos y la
-                        motivación de nutrir con sabrosos y buenos alimentos de
-                        la tierra son los ingredientes esenciales de nuestras
-                        pizzas.
+                        Nuestras pizzas, elaboradas con harinas ecológicas, son
+                        hechas al momento de forma artesanal.
+                        <br />Nos gusta cuidar de cada detalle del proceso:
+                    </p>
+                    <ul class="content_text">
+                        <li>Eligiendo productos frescos y de calidad.</li>
+                        <li>
+                            Apostando por fermentaciones largas de la masa para
+                            hacerla más saludable y fácil de digerir.
+                        </li>
+                        <li>
+                            Cocinando al horno de leña para conseguir ese sabor
+                            y textura inconfundible de una pizza hecha al fuego
+                        </li>
+                    </ul>
+                    <p class="content_text">
+                        El amor por lo que hacemos y la motivación de nutrir con
+                        sabrosos y buenos alimentos de la tierra son los
+                        ingredientes esenciales de nuestras pizzas.
                     </p>
                 </div>
             </section>
             <!-- pizzas -->
             <section id="main-pizzas">
-				<div class="content_wrapper">
-					<h4>Nuestras Pizzas</h4>
-					<p class="content_text">
-						Adaptamos nuestra carta a las necesidades de cada evento y
-						solemos ofrecer pizzas del día según los productos de
-						temporada.
-					</p>
-				</div>
+                <div class="content_wrapper">
+                    <h4>Nuestras Pizzas</h4>
+                    <p class="content_text">
+                        Adaptamos nuestra carta a las necesidades de cada evento
+                        y solemos ofrecer pizzas del día según los productos de
+                        temporada.
+                    </p>
+                </div>
 
-				<h5>Básicos</h5>
+                <h5>Básicos</h5>
                 <div class="glide" id="pizza-glide-basicos">
                     <div class="glide__track" data-glide-el="track">
                         <ul class="glide__slides">
@@ -326,7 +389,7 @@
                     </div>
                 </div>
 
-				<h5>Carnívoras</h5>
+                <h5>Carnívoras</h5>
                 <div class="glide" id="pizza-glide-carnivoras">
                     <div class="glide__track" data-glide-el="track">
                         <ul class="glide__slides">
@@ -615,7 +678,7 @@
                     </div>
                 </div>
 
-				<h5>Vegetarianas</h5>
+                <h5>Vegetarianas</h5>
                 <div class="glide" id="pizza-glide-vegetarianas">
                     <div class="glide__track" data-glide-el="track">
                         <ul class="glide__slides">
@@ -791,7 +854,7 @@
                     </div>
                 </div>
 
-				<h5>Burratas Selection</h5>
+                <h5>Burratas Selection</h5>
                 <div class="glide" id="pizza-glide-burratas">
                     <div class="glide__track" data-glide-el="track">
                         <ul class="glide__slides">
@@ -893,7 +956,7 @@
                     </div>
                 </div>
 
-				<h5>Veganas</h5>
+                <h5>Veganas</h5>
                 <div class="glide" id="pizza-glide-vegetarianas">
                     <div class="glide__track" data-glide-el="track">
                         <ul class="glide__slides">
@@ -1062,41 +1125,49 @@
             </section>
             <!-- Shantiko -->
             <section id="main-shantiko">
-				<div class="content_wrapper">
-					<h4>Para los más curiosos (origen de Shantiko)</h4>
-					<p class="content_text">
-						Este emprendimiento nace a fuego lento, entre pizza y pizza,
-						cantos y reflexiones en un rincón cálido y entrañable de la
-						Garrotxa. 
-						<br/>Surge desde lo profundo de nuestros corazones como un
-						sueño en común de ampliar nuestros horizontes, y de llevar
-						aquello que nos apasiona más allá de los límites ya conocidos.
-					</p>
-					<p class="content_text">
-						En la palabra Shantiko convergen diferentes conceptos y energías
-						que definen nuestro proyecto y la filosofía que nos sustenta.
-						<br/>Por un lado, indudablemente, nuestro nombre “Shantiko” surge de
-						la inspiración de la diosa azteca Chantico y de todas sus
-						cualidades. Ella representa el fuego interno, el fuego del
-						corazón, el fuego femenino y el fuego alquímico de los alimentos
-						que nutren el hogar, entre otras muchas cosas. 
-						<br/>Así pues, es un propósito de reconocer y dar lugar a los emprendimientos en
-						femenino, como el nuestro, que nacen desde la chispa interna.
-						Chantico también se vincula al fuego interno de la tierra, de
-						los volcanes de la Garrotxa que son testigos de nuestros pasos.
-					</p>
-					<p class="content_text">
-						Es un homenaje al fuego, ese elemento vivo y en movimiento, que
-						encendemos y cuidamos cada vez que ponemos en marcha nuestra
-						pizzeria, y que marca la diferencia en el sabor de una pizza.
-						<br/>Otra mirada a nuestro nombre podría ser <em class="title-text">Shanti</em> y <em class="title-text">Ko</em>. 
-						<br/>Entendiendo <em>Shanti</em> como esa palabra en sánscrito vinculada a un estado de
-						calma, paz y harmonia. Ese estado desde el cual nos gusta
-						abordar nuestro proyecto y la vida misma. y <em>Ko</em>, esas dos letras
-						que nos llevan al concepto de Kooperar, i Kolectivizar, energias
-						y recursos para manifestar un proyecto.
-					</p>
-				</div>
+                <div class="content_wrapper">
+                    <h4>Para los más curiosos (origen de Shantiko)</h4>
+                    <p class="content_text">
+                        Este emprendimiento nace a fuego lento, entre pizza y
+                        pizza, cantos y reflexiones en un rincón cálido y
+                        entrañable de la Garrotxa.
+                        <br />Surge desde lo profundo de nuestros corazones como
+                        un sueño en común de ampliar nuestros horizontes, y de
+                        llevar aquello que nos apasiona más allá de los límites
+                        ya conocidos.
+                    </p>
+                    <p class="content_text">
+                        En la palabra Shantiko convergen diferentes conceptos y
+                        energías que definen nuestro proyecto y la filosofía que
+                        nos sustenta.
+                        <br />Por un lado, indudablemente, nuestro nombre
+                        “Shantiko” surge de la inspiración de la diosa azteca
+                        Chantico y de todas sus cualidades. Ella representa el
+                        fuego interno, el fuego del corazón, el fuego femenino y
+                        el fuego alquímico de los alimentos que nutren el hogar,
+                        entre otras muchas cosas. <br />Así pues, es un
+                        propósito de reconocer y dar lugar a los emprendimientos
+                        en femenino, como el nuestro, que nacen desde la chispa
+                        interna. Chantico también se vincula al fuego interno de
+                        la tierra, de los volcanes de la Garrotxa que son
+                        testigos de nuestros pasos.
+                    </p>
+                    <p class="content_text">
+                        Es un homenaje al fuego, ese elemento vivo y en
+                        movimiento, que encendemos y cuidamos cada vez que
+                        ponemos en marcha nuestra pizzeria, y que marca la
+                        diferencia en el sabor de una pizza.
+                        <br />Otra mirada a nuestro nombre podría ser
+                        <em class="title-text">Shanti</em> y
+                        <em class="title-text">Ko</em>. <br />Entendiendo
+                        <em>Shanti</em> como esa palabra en sánscrito vinculada
+                        a un estado de calma, paz y harmonia. Ese estado desde
+                        el cual nos gusta abordar nuestro proyecto y la vida
+                        misma. y <em>Ko</em>, esas dos letras que nos llevan al
+                        concepto de Kooperar, i Kolectivizar, energias y
+                        recursos para manifestar un proyecto.
+                    </p>
+                </div>
             </section>
         </main>
         <footer id="main-footer">
@@ -1117,7 +1188,7 @@
                         <iframe
                             src="https://docs.google.com/forms/d/e/1FAIpQLSe8eTyKJObjKJVyf9loIPz4ANfoSljc0z1wnKiaDJNwTJwR9Q/viewform?embedded=true"
                             width="360"
-							height="420"
+                            height="420"
                             frameborder="0"
                             marginheight="0"
                             marginwidth="0"
@@ -1129,7 +1200,10 @@
                             href="https://www.instagram.com/shantiko.pizzas/"
                             target="_blank"
                         >
-                            <img src="media/images/instagram.png" alt="Instagram" />
+                            <img
+                                src="media/images/instagram.png"
+                                alt="Instagram"
+                            />
                             <span>@shantiko.pizzas</span>
                         </a>
                         <a href="mailto:info@shantiko.com">
