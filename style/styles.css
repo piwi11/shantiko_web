@@ -316,6 +316,7 @@ body > main > section h5 {
 
 #footer_social a:hover {
     transform: scale(1.2);
+    transform-origin: bottom left;
     transition: all 0.5s;
     color: var(--accent-color);
 }
