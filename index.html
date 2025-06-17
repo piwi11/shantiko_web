@@ -103,30 +103,27 @@
                     loop
                     muted
                     data-desktop-src="media/videos/shantiko_hero_h.mp4"
-                    data-desktop-poster="https://cdn.glitch.me/94aeb0f1-3796-4bdf-acdd-ccba5a23cfbf%2Fdesktop.jpg?v=1635523309978"
+                    data-desktop-poster="media/images/shantiko_hero_h.jpg"
                     data-mobile-src="media/videos/shantiko_hero_v.mp4"
-                    data-mobile-poster="https://cdn.glitch.me/94aeb0f1-3796-4bdf-acdd-ccba5a23cfbf%2Fmobile.jpg?v=1635523309850"
+                    data-mobile-poster="media/images/shantiko_hero_v.jpg"
                 ></video>
                 <script>
                     /* define our wide breakpoint for the desktop video - this must match the CSS and preloads! */
-                    const WIDE_VIEWPORT = 480;
                     /* define a match on the media query for us to share logic with CSS in JS */
-                    const wideViewport = window.matchMedia(
-                        `(min-width: ${WIDE_VIEWPORT}px)`
+                    const portraitViewport = window.matchMedia(
+                        `(orientation: landscape)`
                     );
                     /* define a minimum downlink bandwidth to show the video */
                     const MIN_DOWNLINK = 1; // Slow 3G ~~ 0.4, Fast 3G ~~ 1.4
-                    function resizeVideo(wideViewport) {
+                    function resizeVideo(viewportOrientation) {
                         let videoEl = document.getElementById("hero-video");
                         // default to mobile video source and poster
                         let src = videoEl.dataset.mobileSrc;
                         let poster = videoEl.dataset.mobilePoster;
-                        let widthDisplay = "MOBILE";
-                        if (wideViewport.matches) {
+                        if (viewportOrientation.matches) {
                             // override for desktop if the media query for a wide vieport matches
                             src = videoEl.dataset.desktopSrc;
                             poster = videoEl.dataset.desktopPoster;
-                            widthDisplay = "DESKTOP";
                         }
                         let downlink = MIN_DOWNLINK;
                         try {
@@ -150,20 +147,21 @@
                             }
                             videoEl.poster = poster;
                         }
-                        //document.getElementById("width-display").textContent =
-                        //widthDisplay;
                     }
-                    wideViewport.addListener(resizeVideo);
-                    resizeVideo(wideViewport);
+                    portraitViewport.addListener(resizeVideo);
+                    resizeVideo(portraitViewport);
                 </script>
                 <div class="content_wrapper">
                     <div class="hero_text">
                         <h2>ShantiKo PIZZAS</h2>
                         <p>
-                            Foodtruck de pizzas artesanales en Girona,
-                            <br />directas a tus eventos y celebraciones.
+                            Foodtruck de pizzas artesanales
+                            <br />cocinadas a la leña com mucho amor.
+                            <br /><br />Directas a tus eventos y celebraciones
+                            <br />en cualquier parte de Catalunya.
                         </p>
-                        <a href="#main-pizzas" class="button">Ver Pizzas</a>
+                        <!-- <a href="#main-pizzas" class="button">Ver Pizzas</a> -->
+                        <a href="#main-pizzas" class="button">Ver vídeo</a>
                     </div>
                 </div>
             </section>

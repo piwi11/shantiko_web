@@ -375,8 +375,14 @@ body > main > section h5 {
 
 .full-width-video {
     width: 100%;
-    aspect-ratio: 1280 / 960; /* width and height of the mobile video */
+    aspect-ratio: 480 / 720; /* width and height of the mobile video */
     background-color: black; /* to show pre-allocated space */
+}
+
+@media only screen and (orientation: landscape) {
+    .full-width-video {
+        aspect-ratio: 1280 / 480;
+    }
 }
 /* override for desktop */
 @media only screen and (min-width: 480px) {
