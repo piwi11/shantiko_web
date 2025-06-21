@@ -10,7 +10,8 @@ body {
     position: relative;
 }
 #main-header {
-    background-color: #fff;
+    background-color: var(--white-color);
+    border-bottom: 2px solid var(--primary-color);
     display: flex;
     position: fixed;
     top: 0;
@@ -21,10 +22,15 @@ body {
     width: 100px;
     height: 100px;
     cursor: pointer;
+    transition: transform 2s ease;
 }
 #main-header > a > img:active {
     cursor: grab;
 }
+#main-header > a > img:hover {
+    transform: rotate(1turn);
+}
+
 #main-header > h1 {
     margin: auto auto auto 20px;
     font-family: var(--title-font);
@@ -33,11 +39,6 @@ body {
     font-size: 30px;
     color: var(--primary-color);
     text-transform: uppercase;
-    transition: transform 4s ease;
-}
-
-#main-header > h1:hover {
-    transform: rotate(5turn);
 }
 
 #main-header > h1 > b {
@@ -235,7 +236,7 @@ body > main > section h5 {
 }
 
 .polaroid {
-    background-color: var(--tertiary-color);
+    background-color: var(--brokenwhite-color);
     padding: 5% 5% 10%;
     box-sizing: content-box;
     width: 100%;
@@ -432,7 +433,7 @@ details[open] > summary {
 details[open] summary {
     background: var(--primary-color);
     border-radius: 5px;
-    color: #ffffff;
+    color: var(--white-color);
 }
 
 details[open]::details-content {
@@ -465,7 +466,10 @@ details main {
     --tertiary-color: #f7ffdd;
     --text-color: #28343e;
     --accent-color: #a33e4d;
+    --brokenwhite-color: #f9fdea;
+    --white-color: #fff;
 
     --title-font: "Kavivanar", "Averia Libre", serif;
-    --text-font: "Lato", serif;
+    --text-font: "Kavivanar", "Averia Libre", serif;
+    /*--text-font: "Lato", serif;*/
 }
