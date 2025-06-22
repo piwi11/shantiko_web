@@ -85,18 +85,9 @@ body {
     justify-content: start;
 }
 
-#main-header > nav > ul > li > .menu-item:hover {
-    color: var(--accent-color);
-    @media (orientation: portrait) {
-        color: var(--primary-color-dark);
-    }
-}
-
+#main-header > nav > ul > li > .menu-item:hover,
 #main-header > nav > ul > li > .menu-item.active {
     color: var(--accent-color);
-    @media (orientation: portrait) {
-        color: var(--primary-color-dark);
-    }
 }
 #menu_button {
     display: block;
@@ -164,7 +155,7 @@ body {
     transition: color 0.3s ease;
 }
 .menu-item:hover,
-.menu-item:active {
+.menu-item.active {
     color: var(--tertiary-color);
 }
 
@@ -178,10 +169,12 @@ body {
 body > main > section,
 body > footer {
     padding: 120px 20px 20px 20px;
+    position: relative;
 }
 
 body > main > section {
     position: relative;
+    mix-blend-mode: multiply;
 }
 
 body > main > section h4,
@@ -247,7 +240,7 @@ body > main > section h5 {
         z-index: -1;
         max-width: 30%;
         left: 68%;
-        top: 100px;
+        top: 80px;
     }
 }
 @media (min-width: 1024px) {
@@ -311,7 +304,40 @@ body > main > section h5 {
     height: auto;
     object-fit: cover;
     object-position: center;
+    z-index: -2;
+}
+
+.main-hero-gradient {
+    position: absolute;
     z-index: -1;
+    width: 120%;
+    height: 120%;
+    left: -20%;
+    top: -20%;
+    opacity: 0.7;
+    background-color: var(--secondary-color);
+    background-image: radial-gradient(
+            at 80% 100%,
+            var(--primary-color-light) 0px,
+            transparent 50%
+        ),
+        radial-gradient(at 0% 0%, hsla(351, 40%, 61%, 1) 0px, transparent 50%);
+    animation: gradient_animation 6s ease infinite;
+}
+
+@keyframes gradient_animation {
+    0% {
+        left: -20%;
+        top: -20%;
+    }
+    50% {
+        left: 0;
+        top: 0;
+    }
+    100% {
+        left: -20%;
+        top: -20%;
+    }
 }
 
 #main-hero .hero_text {
@@ -321,8 +347,8 @@ body > main > section h5 {
 }
 
 #main-hero .hero_text > * {
-    text-shadow: 2px 2px 2px var(--tertiary-color),
-        -2px 2px 2px var(--tertiary-color);
+    text-shadow: 2px 2px 6px var(--tertiary-color),
+        -2px 2px 6px var(--tertiary-color);
     font-family: var(--title-font);
 }
 
@@ -357,6 +383,7 @@ body > main > section h5 {
 
     #main-hero .hero_text p {
         font-size: 2.8rem;
+        padding-bottom: 3rem;
     }
 
     #main-hero .hero_text a {
@@ -374,6 +401,17 @@ body > main > section h5 {
 
 #main-footer {
     background-color: var(--secondary-color);
+    padding-bottom: 120px;
+}
+
+.main-footer-gradient-bottom {
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 120px;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(0deg, var(--accent-color), transparent);
 }
 
 .polaroid {
@@ -581,11 +619,34 @@ details main {
     background-color: var(--brokenwhite-color);
 }
 
+.gradient-container {
+    width: 100%;
+    height: 130px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.gradient-container--yellow {
+    border-top: 10px solid var(--tertiary-color);
+    background: linear-gradient(180deg, var(--tertiary-color), transparent);
+}
+
+.gradient-container--green {
+    border-top: 10px solid var(--primary-color-light);
+    background: linear-gradient(
+        180deg,
+        var(--primary-color-light),
+        transparent
+    );
+    filter: none;
+}
+
 :root {
     --primary-color: #379184;
     --primary-color-light: #89d2c7;
-    --primary-color-dark: #112c28;
-    --secondary-color: #dba159;
+    --primary-color-dark: #1a413b;
+    --secondary-color: #daa058;
     --tertiary-color: #f7ffdd;
     --text-color: #28343e;
     --accent-color: #a33e4d;

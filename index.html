@@ -137,6 +137,7 @@
         <main>
             <!-- hero video -->
             <section id="main-hero">
+                <div class="main-hero-gradient"></div>
                 <video
                     id="hero-video"
                     class="full-width-video"
@@ -178,12 +179,7 @@
                             // only override values if they differ
                             if (downlink >= MIN_DOWNLINK) {
                                 videoEl.src = src;
-                                widthDisplay += " - FAST";
-                                console.log(
-                                    `Detected bandwidth (${downlink}Mbps) greater than threshold (${MIN_DOWNLINK}Mbps) - showing video`
-                                );
                             } else {
-                                widthDisplay += " - SLOW";
                                 console.log(
                                     `Not showing video due to low bandwidth`
                                 );
@@ -256,6 +252,9 @@
             </section>
             <!-- pizzas -->
             <section id="main-pizzas">
+                <div
+                    class="gradient-container gradient-container--yellow"
+                ></div>
                 <div class="content_wrapper">
                     <h4>Nuestras Pizzas</h4>
                     <p class="content_text">
@@ -1174,6 +1173,7 @@
             </section>
             <!-- Shantiko -->
             <section id="main-shantiko">
+                <div class="gradient-container gradient-container--green"></div>
                 <div class="content_wrapper">
                     <h4>Para los más curiosos: origen de ShantiKo</h4>
                     <p class="content_text">
@@ -1213,7 +1213,10 @@
                                 class="title-font text-primary font-variant-logo"
                                 >ShantiKo</span
                             >
-                            surge de la inspiración de la diosa azteca Chantico
+                            surge de la inspiración de la diosa azteca
+                            <span class="title-font font-variant-logo"
+                                >Chantico</span
+                            >
                             y de todas sus cualidades. Ella representa el fuego
                             interno, el fuego del corazón, el fuego femenino y
                             el fuego alquímico de los alimentos que nutren el
@@ -1224,10 +1227,11 @@
                             los emprendimientos en femenino, como el nuestro,
                             que nacen desde la chispa interna.
                             <span class="title-font font-variant-logo"
-                                >ShantiKo</span
-                            >Chantico también se vincula al fuego interno de la
-                            tierra, de los volcanes de la Garrotxa que son
-                            testigos de nuestros pasos.
+                                >Chantico</span
+                            >
+                            también se vincula al fuego interno de la tierra, de
+                            los volcanes de la Garrotxa que son testigos de
+                            nuestros pasos.
                         </p>
                         <p class="content_text">
                             Es un homenaje al fuego, ese elemento vivo y en
@@ -1263,6 +1267,7 @@
             </section>
         </main>
         <footer id="main-footer">
+            <div class="gradient-container gradient-container--yellow"></div>
             <div class="content_wrapper">
                 <h4>ConTacto</h4>
                 <div id="footer_cols">
@@ -1321,6 +1326,7 @@
                     </div>
                 </div>
             </div>
+            <div class="main-footer-gradient-bottom"></div>
         </footer>
         <!-- Seccion scripts -->
         <script src="lib/glide/glide.min.js"></script>
