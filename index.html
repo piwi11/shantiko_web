@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
-        <title>Shantiko Pizzas</title>
+        <title>ShantiKo PIZZAS</title>
         <meta name="description" content="Foodtruck de pizzas de la Garrotxa" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link
@@ -41,21 +41,42 @@
             <h1><span>S</span>hanti<span>k</span>o <br /><b>Pizzas</b></h1>
             <nav>
                 <ul>
-                    <li><a href="#main-hero" class="menu-item">Home</a></li>
                     <li>
-                        <a href="#main-about_us" class="menu-item"
-                            >Presentación</a
+                        <a
+                            href="#main-hero"
+                            class="menu-item font-variant-logo active"
+                            >Inicio</a
                         >
                     </li>
-                    <li><a href="#main-pizzas" class="menu-item">Pizzas</a></li>
                     <li>
-                        <a href="#main-shantiko" class="menu-item">Shantiko</a>
+                        <a
+                            href="#main-about_us"
+                            class="menu-item font-variant-logo"
+                            >Bienvenidos</a
+                        >
                     </li>
                     <li>
-                        <a href="#main-footer" class="menu-item">Contacto</a>
+                        <a
+                            href="#main-pizzas"
+                            class="menu-item font-variant-logo"
+                            >Pizzas</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="#main-shantiko"
+                            class="menu-item font-variant-logo"
+                            >ShantiKo</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="#main-footer"
+                            class="menu-item font-variant-logo"
+                            >ConTacto</a
+                        >
                     </li>
                 </ul>
-                <!-- <a href="#" class="menu-item" onclick="closeMenu()">Close</a> -->
             </nav>
             <button onclick="toggleMenu()" id="menu_button">
                 <svg
@@ -81,15 +102,37 @@
         <!-- Navigation Menu -->
         <nav id="menu">
             <ul>
-                <li><a href="#main-hero" class="menu-item">Home</a></li>
                 <li>
-                    <a href="#main-about_us" class="menu-item">Presentación</a>
+                    <a
+                        href="#main-hero"
+                        class="menu-item font-variant-logo active"
+                        >Inicio</a
+                    >
                 </li>
-                <li><a href="#main-pizzas" class="menu-item">Pizzas</a></li>
-                <li><a href="#main-shantiko" class="menu-item">Shantiko</a></li>
-                <li><a href="#main-footer" class="menu-item">Contacto</a></li>
+                <li>
+                    <a href="#main-about_us" class="menu-item font-variant-logo"
+                        >Bienvenidos</a
+                    >
+                </li>
+                <li>
+                    <a href="#main-pizzas" class="menu-item font-variant-logo"
+                        >Pizzas</a
+                    >
+                </li>
+                <li>
+                    <a href="#main-shantiko" class="menu-item font-variant-logo"
+                        >ShantiKo</a
+                    >
+                </li>
+                <li>
+                    <a href="#main-footer" class="menu-item font-variant-logo"
+                        >ConTacto</a
+                    >
+                </li>
             </ul>
-            <!-- <a href="#" class="menu-item" onclick="closeMenu()">Close</a> -->
+            <a href="#" class="menu-item menu__close" onclick="closeMenu(event)"
+                >&#10006; Cerrar</a
+            >
         </nav>
         <main>
             <!-- hero video -->
@@ -160,34 +203,40 @@
                             cualquier parte de Catalunya
                         </p>
                         <!-- <a href="#main-pizzas" class="button">Ver Pizzas</a> -->
-                        <a href="#main-pizzas" class="button">Ver vídeo</a>
+                        <a href="#main-pizzas" class="button">CARTA</a>
                     </div>
                 </div>
             </section>
             <!-- about us -->
             <section id="main-about_us">
                 <div class="content_wrapper">
-                    <h4>Presentación</h4>
+                    <h4>Bienvenidos</h4>
                     <p class="content_text">
-                        Somos <b>Marita</b> y <b>Estela</b>, creadoras de
+                        Somos <b><em>Marita</em></b> y <b><em>Estela</em></b
+                        >, creadoras de
                         <em class="title-font text-primary font-variant-logo"
                             >ShantiKo PIZZAS</em
-                        >. <br />Este proyecto sobre ruedas nace entre volcanes,
-                        después de más de una década ofreciendo pizzas en un
-                        emblemático pueblo de la Garrotxa. <br />Nuestro
-                        espíritu aventurero nos impulsó a llevar nuestro oficio
-                        como pizzaiolas a nuevos horizontes.
+                        >.
+                        <img
+                            src="media/images/shantiko_presentacion.gif"
+                            alt="Shantiko presentación"
+                            class="content_img content_img--border"
+                        />
+                    </p>
+
+                    <p class="content_text">
+                        Este proyecto sobre ruedas nace entre volcanes, después
+                        de más de una década ofreciendo pizzas en un emblemático
+                        pueblo de la Garrotxa. <br />Nuestro espíritu aventurero
+                        nos impulsó a llevar nuestro oficio como pizzaiolas a
+                        nuevos horizontes.
                     </p>
                     <p class="content_text">
                         Nuestras pizzas, elaboradas con harinas ecológicas, son
                         hechas al momento de forma artesanal.
                         <br />Nos gusta cuidar de cada detalle del proceso:
                     </p>
-                    <img
-                        src="media/images/shantiko_presentacion.gif"
-                        alt="Shantiko presentación"
-                    />
-                    <ul class="content_text">
+                    <ul class="content_text li_custombullets">
                         <li>Eligiendo productos frescos y de calidad.</li>
                         <li>
                             Apostando por fermentaciones largas de la masa para
@@ -201,7 +250,7 @@
                     <p class="content_text">
                         El amor por lo que hacemos y la motivación de nutrir con
                         sabrosos y buenos alimentos de la tierra son los
-                        ingredientes esenciales de nuestras pizzas.
+                        <b>ingredientes esenciales de nuestras pizzas</b>.
                     </p>
                 </div>
             </section>
@@ -1126,50 +1175,88 @@
             <!-- Shantiko -->
             <section id="main-shantiko">
                 <div class="content_wrapper">
-                    <h4>Para los más curiosos (origen de Shantiko)</h4>
+                    <h4>Para los más curiosos: origen de ShantiKo</h4>
                     <p class="content_text">
                         Este emprendimiento nace a fuego lento, entre pizza y
                         pizza, cantos y reflexiones en un rincón cálido y
                         entrañable de la Garrotxa.
-                        <br />Surge desde lo profundo de nuestros corazones como
-                        un sueño en común de ampliar nuestros horizontes, y de
+
+                        <img
+                            src="media/images/shantiko_logo.gif"
+                            alt="Shantiko PIZZAS"
+                            class="content_img"
+                        />
+                    </p>
+                    <p class="content_text">
+                        Surge desde lo profundo de nuestros corazones como un
+                        sueño en común de ampliar nuestros horizontes, y de
                         llevar aquello que nos apasiona más allá de los límites
                         ya conocidos.
                     </p>
-                    <details class="content_text">
-                        <summary>Saber mas</summary>
-                        <p>
-                            En la palabra Shantiko convergen diferentes
-                            conceptos y energías que definen nuestro proyecto y
-                            la filosofía que nos sustenta.
-                            <br />Por un lado, indudablemente, nuestro nombre
-                            “Shantiko” surge de la inspiración de la diosa
-                            azteca Chantico y de todas sus cualidades. Ella
-                            representa el fuego interno, el fuego del corazón,
-                            el fuego femenino y el fuego alquímico de los
-                            alimentos que nutren el hogar, entre otras muchas
-                            cosas. <br />Así pues, es un propósito de reconocer
-                            y dar lugar a los emprendimientos en femenino, como
-                            el nuestro, que nacen desde la chispa interna.
-                            Chantico también se vincula al fuego interno de la
+                    <details>
+                        <summary class="content_text text-accent">
+                            Saber más
+                        </summary>
+                        <p class="content_text">
+                            En la palabra
+                            <span
+                                class="title-font text-primary font-variant-logo"
+                                >ShantiKo</span
+                            >
+                            convergen diferentes conceptos y energías que
+                            definen nuestro proyecto y la filosofía que nos
+                            sustenta.
+                        </p>
+                        <p class="content_text">
+                            Por un lado, indudablemente, nuestro nombre
+                            <span
+                                class="title-font text-primary font-variant-logo"
+                                >ShantiKo</span
+                            >
+                            surge de la inspiración de la diosa azteca Chantico
+                            y de todas sus cualidades. Ella representa el fuego
+                            interno, el fuego del corazón, el fuego femenino y
+                            el fuego alquímico de los alimentos que nutren el
+                            hogar, entre otras muchas cosas.
+                        </p>
+                        <p class="content_text">
+                            Así pues, es un propósito de reconocer y dar lugar a
+                            los emprendimientos en femenino, como el nuestro,
+                            que nacen desde la chispa interna.
+                            <span class="title-font font-variant-logo"
+                                >ShantiKo</span
+                            >Chantico también se vincula al fuego interno de la
                             tierra, de los volcanes de la Garrotxa que son
                             testigos de nuestros pasos.
                         </p>
-                        <p>
+                        <p class="content_text">
                             Es un homenaje al fuego, ese elemento vivo y en
                             movimiento, que encendemos y cuidamos cada vez que
                             ponemos en marcha nuestra pizzeria, y que marca la
                             diferencia en el sabor de una pizza.
-                            <br />Otra mirada a nuestro nombre podría ser
-                            <em class="title-text">Shanti</em> y
-                            <em class="title-text">Ko</em>. <br />Entendiendo
-                            <em>Shanti</em> como esa palabra en sánscrito
-                            vinculada a un estado de calma, paz y harmonia. Ese
-                            estado desde el cual nos gusta abordar nuestro
-                            proyecto y la vida misma. y <em>Ko</em>, esas dos
-                            letras que nos llevan al concepto de Kooperar, i
-                            Kolectivizar, energias y recursos para manifestar un
-                            proyecto.
+                        </p>
+                        <p class="content_text">
+                            Otra mirada a nuestro nombre podría ser
+                            <em
+                                class="title-font text-primary font-variant-logo"
+                                >Shanti</em
+                            >
+                            y
+                            <em
+                                class="title-font text-primary font-variant-logo"
+                                >Ko</em
+                            >. <br />Entendiendo
+                            <span class="title-font font-variant-logo"
+                                >Shanti</span
+                            >
+                            como esa palabra en sánscrito vinculada a un estado
+                            de calma, paz y harmonia. Ese estado desde el cual
+                            nos gusta abordar nuestro proyecto y la vida misma.
+                            y
+                            <span class="title-font font-variant-logo">Ko</span
+                            >, esas dos letras que nos llevan al concepto de
+                            Kooperar, y Kolectivizar, energias y recursos para
+                            manifestar un proyecto.
                         </p>
                     </details>
                 </div>
@@ -1177,22 +1264,29 @@
         </main>
         <footer id="main-footer">
             <div class="content_wrapper">
-                <h4>Formulario para eventos</h4>
+                <h4>ConTacto</h4>
                 <div id="footer_cols">
                     <div id="footer_text">
                         <p class="content_text">
                             Nos desplazamos por toda Catalunya para llegar a tu
                             evento. Disfruta con todos los sentidos de nuestra
-                            pizzeria nómada.. Puedes contratar nuestros
-                            servicios tanto si estás organizando un festival,
-                            market, feria, como si quieres celebrar un evento
-                            privado.
+                            pizzeria nómada.
+                        </p>
+                        <p class="content_text">
+                            Puedes contratar nuestros servicios tanto si estás
+                            organizando un festival, market, feria, como si
+                            quieres celebrar un evento privado.
                         </p>
                     </div>
-                    <div class="content_text">
-                        <p>Contacta con nosotros mediante este formulario</p>
+                    <div>
+                        <p class="content_text">
+                            Rellena el siguiene formulario y explícanos como
+                            podemos hacer que tu evento sea aún más único:
+                        </p>
                         <details id="details_form">
-                            <summary>Abrir formulario</summary>
+                            <summary class="content_text text-accent">
+                                Formulario para eventos
+                            </summary>
                             <div id="footer_form">
                                 <iframe
                                     src="https://docs.google.com/forms/d/e/1FAIpQLSe8eTyKJObjKJVyf9loIPz4ANfoSljc0z1wnKiaDJNwTJwR9Q/viewform?embedded=true"
@@ -1221,7 +1315,9 @@
                             <img src="media/images/email.png" alt="Email" />
                             <span>info@shantiko.com</span>
                         </a>
-                        <p>&copy; Shantiko 2025</p>
+                        <p class="title-font font-variant-logo">
+                            <br />&copy; ShantiKo 2025
+                        </p>
                     </div>
                 </div>
             </div>

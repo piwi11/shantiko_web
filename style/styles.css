@@ -14,16 +14,23 @@ body {
     border-bottom: 2px solid var(--primary-color);
     display: flex;
     position: fixed;
+    padding-left: 10px;
     top: 0;
     width: 100%;
     z-index: 9000;
 }
 #main-header > a > img {
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: auto;
     cursor: pointer;
     transition: transform 2s ease;
 }
+@media (min-width: 640px) {
+    #main-header > a > img {
+        width: 100px;
+    }
+}
+
 #main-header > a > img:active {
     cursor: grab;
 }
@@ -32,22 +39,36 @@ body {
 }
 
 #main-header > h1 {
-    margin: auto auto auto 20px;
+    margin: auto auto auto 10px;
     font-family: var(--title-font);
     font-weight: 700;
     line-height: 1;
-    font-size: 30px;
+    font-size: 17px;
     color: var(--primary-color);
     text-transform: uppercase;
 }
 
-#main-header > h1 > b {
-    font-size: 43px;
-    font-weight: 500;
+#main-header > h1 > span {
+    font-size: 23px;
 }
 
-#main-header > h1 > span {
-    font-size: 37px;
+#main-header > h1 > b {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+@media (min-width: 640px) {
+    #main-header > h1 {
+        font-size: 30px;
+    }
+
+    #main-header > h1 > span {
+        font-size: 37px;
+    }
+
+    #main-header > h1 > b {
+        font-size: 42px;
+    }
 }
 
 #main-header > nav {
@@ -71,15 +92,19 @@ body {
     }
 }
 
-/* #main-header nav>ul>li{
-    
-} */
+#main-header > nav > ul > li > .menu-item.active {
+    color: var(--accent-color);
+    @media (orientation: portrait) {
+        color: var(--primary-color-dark);
+    }
+}
 #menu_button {
+    display: block;
     background: transparent;
     padding: 0px 15px;
     border: 0px solid transparent;
+    transform: scale(0.8);
     transition: transform 0.3s;
-    display: block;
 }
 
 @media (min-width: 1024px) {
@@ -90,7 +115,7 @@ body {
 
 #menu_button:hover {
     cursor: pointer;
-    transform: scale(1.1);
+    transform: scale(1);
 }
 #menu_button > svg {
     width: 40px;
@@ -113,16 +138,16 @@ body {
 #menu {
     position: fixed;
     top: 0;
-    left: -250px; /* Initially off-screen */
+    left: -240px;
     height: 100vh;
-    width: 250px; /* Adjust as needed */
-    background-color: var(--primary-color-dark);
-    transition: left 0.3s ease; /* Only transition the left property */
-    z-index: 9999; /* Ensure it's above other content */
+    width: 240px;
+    background-color: var(--accent-color);
+    transition: left 0.3s ease;
+    z-index: 9999;
 }
 
 #menu.active {
-    left: 0; /* Slide the menu into view */
+    left: 0;
 }
 
 #menu > ul {
@@ -130,7 +155,6 @@ body {
     padding: 16px 3px;
 }
 
-/* Example styling for menu items */
 .menu-item {
     font-size: 1.6rem;
     padding: 10px;
@@ -139,8 +163,16 @@ body {
     display: block;
     transition: color 0.3s ease;
 }
-.menu-item:hover {
+.menu-item:hover,
+.menu-item:active {
     color: var(--tertiary-color);
+}
+
+.menu__close {
+    font-size: 1.2rem;
+    position: absolute;
+    bottom: 0;
+    right: 0.3rem;
 }
 
 body > main > section,
@@ -148,13 +180,17 @@ body > footer {
     padding: 120px 20px 20px 20px;
 }
 
+body > main > section {
+    position: relative;
+}
+
 body > main > section h4,
 body > footer h4 {
     margin-bottom: 1rem;
     font-family: var(--title-font);
     font-weight: 700;
-    line-height: 1.6;
-    font-size: 2.4rem;
+    line-height: 1.2;
+    font-size: 2rem;
     color: var(--primary-color-dark);
     font-variant-caps: small-caps;
 }
@@ -170,7 +206,7 @@ body > main > section h5 {
 }
 
 .content_text {
-    margin-bottom: 0.4rem;
+    margin-bottom: 2rem;
     font-family: var(--text-font);
     font-weight: 600;
     line-height: 1.4;
@@ -178,9 +214,80 @@ body > main > section h5 {
     color: var(--text-color);
 }
 
+@media (min-width: 800px) {
+    .content_text {
+        max-width: 70%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .content_text {
+        max-width: 60%;
+    }
+}
+
+.content_img {
+    max-height: 240px;
+    width: auto;
+}
+.content_img--border {
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+    border: 10px solid var(--brokenwhite-color);
+}
+
+@media (min-height: 420px) {
+    .content_img {
+        max-height: 380px;
+    }
+}
+
+@media (min-width: 800px) {
+    .content_img {
+        position: absolute;
+        z-index: -1;
+        max-width: 30%;
+        left: 68%;
+        top: 100px;
+    }
+}
+@media (min-width: 1024px) {
+    .content_img {
+        max-width: 36%;
+        left: 62%;
+    }
+}
+
 .content_wrapper {
     max-width: 1200px;
     margin: auto;
+}
+
+.button {
+    color: var(--accent-color);
+    text-decoration: none;
+    border: 3px solid var(--accent-color);
+    border-radius: 6px;
+    background-color: #f9fdea33;
+    transition: background-color 0.6s;
+}
+
+.button:hover {
+    background-color: #f9fdea99;
+}
+
+.li_custombullets {
+    list-style: none;
+    padding: 0;
+}
+
+.li_custombullets li {
+    padding-left: 1rem;
+    text-indent: -0.7rem;
+    margin-bottom: 1rem;
+}
+
+.li_custombullets li::before {
+    content: "💚 ";
 }
 
 #carousel {
@@ -189,9 +296,14 @@ body > main > section h5 {
 
 #main-hero {
     min-height: auto;
-    padding: 100px 0 0;
+    padding: 70px 0 0;
     position: relative;
     overflow: hidden;
+}
+@media (min-width: 640px) {
+    #main-hero {
+        padding: 102px 0 0;
+    }
 }
 
 #main-hero > video {
@@ -204,27 +316,56 @@ body > main > section h5 {
 
 #main-hero .hero_text {
     text-align: center;
-    padding: 6rem 0;
+    padding: 2rem 0;
     color: var(--accent-color);
 }
 
 #main-hero .hero_text > * {
-    color: var(--primary-color);
-    text-shadow: 2px 2px 2px var(--tertiary-color);
+    text-shadow: 2px 2px 2px var(--tertiary-color),
+        -2px 2px 2px var(--tertiary-color);
     font-family: var(--title-font);
 }
 
 #main-hero .hero_text h2 {
-    font-size: 4.2rem;
+    color: var(--primary-color-dark);
     font-variant: small-caps;
+    font-size: 2.6rem;
+    line-height: 1;
 }
 
 #main-hero .hero_text p {
-    font-size: 2.8rem;
+    color: var(--primary-color-dark);
+    font-size: 1.8rem;
+    line-height: 1;
+    padding-bottom: 2rem;
 }
 
 #main-hero .hero_text a {
-    font-size: 2.8rem;
+    margin-top: 1rem;
+    font-size: 1.4rem;
+    padding: 0.2rem 1.2rem;
+}
+
+@media (min-width: 1024px) {
+    #main-hero .hero_text {
+        padding: 4rem 0;
+    }
+
+    #main-hero .hero_text h2 {
+        font-size: 4.2rem;
+    }
+
+    #main-hero .hero_text p {
+        font-size: 2.8rem;
+    }
+
+    #main-hero .hero_text a {
+        font-size: 2.2rem;
+    }
+}
+
+#main-about_us {
+    padding-top: 40px;
 }
 
 #main-pizzas {
@@ -303,7 +444,7 @@ body > main > section h5 {
 }
 
 .polaroid ul > li::marker {
-    content: "\2714   "; /*"ø  "; "\1F355  ";*/
+    content: "\2714 ";
     font-size: 0.8rem;
     color: var(--primary-color);
 }
@@ -325,6 +466,10 @@ body > main > section h5 {
 #footer_cols > * {
     flex-grow: 1;
     flex-basis: 0;
+}
+
+#footer_cols .content_text {
+    max-width: 96%;
 }
 
 #footer_form {
@@ -351,15 +496,10 @@ body > main > section h5 {
 }
 
 #footer_social a:hover {
-    transform: scale(1.2);
-    transform-origin: bottom left;
-    transition: all 0.5s;
     color: var(--accent-color);
 }
 
 #footer_social a:active {
-    transform: scale(0.8);
-    transform-origin: bottom left;
     transition: all 0.5s;
 }
 
@@ -369,28 +509,26 @@ body > main > section h5 {
 .text-primary {
     color: var(--primary-color);
 }
+.text-accent {
+    color: var(--accent-color);
+}
 .font-variant-logo {
     font-variant: small-caps;
     font-style: normal;
 }
 
 .full-width-video {
-    width: 100%;
-    aspect-ratio: 480 / 720; /* width and height of the mobile video */
-    background-color: black; /* to show pre-allocated space */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
 }
 
-@media only screen and (orientation: landscape) {
-    .full-width-video {
-        aspect-ratio: 1280 / 480;
-    }
-}
-/* override for desktop */
-@media only screen and (min-width: 480px) {
-    .full-width-video {
-        aspect-ratio: 1280 / 480;
-    }
-}
 .width-display {
     font-size: 50%;
     position: absolute;
@@ -402,7 +540,6 @@ body > main > section h5 {
 details {
     interpolate-size: allow-keywords;
     overflow: clip;
-    margin-top: 0.125em;
     color: var(--text-color);
 }
 
@@ -414,26 +551,12 @@ details summary {
     color: var(--text-color);
 }
 
-details:not([open]) summary:hover,
-details:not([open]) summary:focus {
-    color: var(--accent-color);
-}
-
-details > summary::before {
-    content: "\2191";
-}
-
-details[open] > summary::before {
-    content: "\2193";
+details > summary::after {
+    content: "\25BC";
 }
 
 details[open] > summary {
-    margin-bottom: 0.5rem;
-}
-details[open] summary {
-    background: var(--primary-color);
-    border-radius: 5px;
-    color: var(--white-color);
+    display: none;
 }
 
 details[open]::details-content {
@@ -447,7 +570,7 @@ details::details-content {
 }
 
 details main {
-    padding: 1em 2.2em;
+    padding: 0 2.2em 1em;
 }
 
 #details_form {
@@ -455,7 +578,7 @@ details main {
 }
 
 #details_form[open] {
-    background-color: #f7ffdd;
+    background-color: var(--brokenwhite-color);
 }
 
 :root {

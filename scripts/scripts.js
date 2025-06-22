@@ -4,9 +4,9 @@ function toggleMenu() {
     toggleMenuButton();
 }
 
-function closeMenu() {
-    const menu = document.getElementById("menu");
-    menu.classList.remove("active");
+function closeMenu(event) {
+    event.preventDefault();
+    toggleMenu();
 }
 
 function toggleMenuButton() {
