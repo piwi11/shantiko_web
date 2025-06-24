@@ -101,19 +101,49 @@ glides.forEach((glide) => {
     initGlide(glide);
 });
 
-// intersection API
-const observer_images = new IntersectionObserver(handleIntersection);
-
+// intersection API lazy load images
+const observerImages = new IntersectionObserver(handleImgIntersection);
 const images = document.querySelectorAll(".content_img");
+images.forEach((image) => observerImages.observe(image));
 
-images.forEach((image) => observer_images.observe(image));
-
-function handleIntersection(entries) {
+function handleImgIntersection(entries) {
     entries.map((entry) => {
         if (entry.isIntersecting) {
             entry.target.src = entry.target.dataset.src;
             entry.target.classList.add("content_img--loaded");
-            observer_images.unobserve(entry.target);
+            observerImages.unobserve(entry.target);
         }
+    });
+}
+
+// intersection API animate menus
+const observerSectionsOptions = {
+    rootMargin: "0px 0px -80% 0px"
+};
+const observerSections = new IntersectionObserver(
+    handleSectionsIntersection,
+    observerSectionsOptions
+);
+const sections = document.querySelectorAll(".menu_section");
+sections.forEach((section) => observerSections.observe(section));
+
+const headMenuElements = document.querySelectorAll("#main-header nav ul li a");
+const navMenuElements = document.querySelectorAll("#menu ul li a");
+
+function handleSectionsIntersection(entries) {
+    entries.map((entry) => {
+        if (entry.isIntersecting) {
+            const href = entry.target.attributes.id.value;
+            updateActiveClass(headMenuElements, href);
+            updateActiveClass(navMenuElements, href);
+        }
+    });
+}
+
+function updateActiveClass(elements, href) {
+    elements.forEach((element) => {
+        if (element.attributes.href.value === "#" + href)
+            element.classList.add("active");
+        else element.classList.remove("active");
     });
 }
