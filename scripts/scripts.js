@@ -100,3 +100,20 @@ const glides = document.querySelectorAll(".glide");
 glides.forEach((glide) => {
     initGlide(glide);
 });
+
+// intersection API
+const observer_images = new IntersectionObserver(handleIntersection);
+
+const images = document.querySelectorAll(".content_img");
+
+images.forEach((image) => observer_images.observe(image));
+
+function handleIntersection(entries) {
+    entries.map((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.src = entry.target.dataset.src;
+            entry.target.classList.add("content_img--loaded");
+            observer_images.unobserve(entry.target);
+        }
+    });
+}
