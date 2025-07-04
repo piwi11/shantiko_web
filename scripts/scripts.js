@@ -147,3 +147,30 @@ function updateActiveClass(elements, href) {
         else element.classList.remove("active");
     });
 }
+
+function activateLightbox() {
+    const heroButon = document.getElementById("hero_btn");
+    heroButon.innerText = "Ver Video";
+    heroButon.setAttribute("data-fslightbox", "hero");
+    heroButon.setAttribute("data-id", "hero_video_lightbox");
+    heroButon.setAttribute("href", heroButon.getAttribute("data-href"));
+    refreshFsLightbox();
+    fsLightbox.props.type = "video";
+    fsLightbox.props.autoplay = true;
+}
+
+activateLightbox();
+
+fsLightbox.props.onOpen = function (instance) {
+    autocloseVideo();
+};
+
+function autocloseVideo() {
+    const lightboxVideo = document.getElementById("hero_video_lightbox");
+    lightboxVideo.removeEventListener("ended", onEndVideo);
+    lightboxVideo.addEventListener("ended", onEndVideo, false);
+}
+function onEndVideo(e) {
+    console.log(e);
+    fsLightbox.close();
+}
