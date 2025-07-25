@@ -1,3 +1,5 @@
+/*  Hecho con cariño desde Banyoles y Hendaya.*/
+/*  Por Martín y Artur.*/
 function toggleMenu() {
     const menu = document.getElementById("menu");
     menu.classList.toggle("active");
