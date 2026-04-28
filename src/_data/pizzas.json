@@ -1,0 +1,249 @@
+{
+    "categories": [
+        {
+            "id": "basicos",
+            "label": "Básicos",
+            "pizzas": [
+                {
+                    "id": "margarita",
+                    "name": "MARGARITA",
+                    "image": "media/images/pizza-placeholder.jpg",
+                    "ingredients": [
+                        "Salsa de tomate",
+                        "Mozzarella",
+                        "Aceite de Albahaca (opcional)"
+                    ]
+                },
+                {
+                    "id": "prosciutto",
+                    "name": "PROSCIUTTO",
+                    "image": "media/images/pizza-prosciutto.jpg",
+                    "ingredients": [
+                        "Salsa de tomate",
+                        "Mozzarella",
+                        "Jamón dulce"
+                    ]
+                },
+                {
+                    "id": "sotabosc",
+                    "name": "SOTABOSC",
+                    "image": "media/images/pizza-sotabosc.jpg",
+                    "ingredients": [
+                        "Salsa de tomate",
+                        "Mozzarella",
+                        "Jamón dulce",
+                        "Champiñones"
+                    ]
+                },
+                {
+                    "id": "4formatges",
+                    "name": "4FORMATGES",
+                    "image": "media/images/pizza-4formatges.jpg",
+                    "ingredients": [
+                        "Salsa de tomate",
+                        "Mozzarella",
+                        "Brie",
+                        "Provolone",
+                        "Roquefort"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "carnivoras",
+            "label": "Carnívoras",
+            "pizzas": [
+                {
+                    "id": "diavola",
+                    "name": "DIAVOLA",
+                    "image": "media/images/pizza-diavola.jpg",
+                    "ingredients": [
+                        "Salsa de tomate",
+                        "Mozzarella",
+                        "Guiso de ternera picante",
+                        "Cebolla"
+                    ]
+                },
+                {
+                    "id": "perola",
+                    "name": "PEROLA",
+                    "image": "media/images/pizza-perola.jpg",
+                    "ingredients": [
+                        "Salsa de tomate",
+                        "Mozzarella",
+                        "Pera",
+                        "Jamón serrano",
+                        "Gorgonzola",
+                        "Rúcula"
+                    ]
+                },
+                {
+                    "id": "mexicana",
+                    "name": "MEXICANA",
+                    "image": "media/images/pizza-mexicana.jpg",
+                    "ingredients": [
+                        "Salsa de tomate",
+                        "Mozzarella",
+                        "Pollo guisado con cebolla",
+                        "Pimiento rojo",
+                        "Guindilla"
+                    ]
+                },
+                {
+                    "id": "iaia-paquita",
+                    "name": "IAIA PAQUITA",
+                    "image": "media/images/pizza-iaia-paquita.jpg",
+                    "ingredients": [
+                        "Salsa de tomate",
+                        "Mozzarella",
+                        "Cebolla",
+                        "Pimiento verde",
+                        "Morcilla de Burgos"
+                    ]
+                },
+                {
+                    "id": "roc",
+                    "name": "ROC",
+                    "image": "media/images/pizza-roc.jpg",
+                    "ingredients": [
+                        "Salsa de tomate",
+                        "Mozzarella",
+                        "Beicon",
+                        "Cebolla",
+                        "Champiñones",
+                        "Roquefort"
+                    ]
+                },
+                {
+                    "id": "carbonara",
+                    "name": "CARBONARA",
+                    "image": "media/images/pizza-carbonara.jpg",
+                    "ingredients": [
+                        "Nata",
+                        "Mozzarella",
+                        "Cebolla",
+                        "Champiñones",
+                        "Beicon"
+                    ]
+                },
+                {
+                    "id": "tirrena",
+                    "name": "TIRRENA",
+                    "image": "media/images/pizza-tirrena.jpg",
+                    "ingredients": [
+                        "Salsa de tomate",
+                        "Mozzarella",
+                        "Cebolla",
+                        "Atún",
+                        "Pimiento rojo",
+                        "Olivas negras"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "vegetarianas",
+            "label": "Vegetarianas",
+            "pizzas": [
+                {
+                    "id": "nevada",
+                    "name": "NEVADA",
+                    "image": "media/images/pizza-nevada.jpg",
+                    "ingredients": [
+                        "Nata",
+                        "Espinaca",
+                        "Queso de cabra",
+                        "Miel",
+                        "Nueces"
+                    ]
+                },
+                {
+                    "id": "delacasa",
+                    "name": "DELACASA",
+                    "image": "media/images/pizza-delacasa.jpg",
+                    "ingredients": [
+                        "Salsa de tomate",
+                        "Mozzarella",
+                        "Champiñones",
+                        "Tomate seco",
+                        "Queso de cabra",
+                        "Rúcula",
+                        "Olivas negras"
+                    ]
+                },
+                {
+                    "id": "meraki",
+                    "name": "MERAKI",
+                    "image": "media/images/pizza-meraki.jpg",
+                    "ingredients": [
+                        "Salsa de tomate",
+                        "Mozzarella",
+                        "Berenjena asada",
+                        "Tomates secos",
+                        "Parmesano",
+                        "Olivas negras"
+                    ]
+                },
+                {
+                    "id": "escalivada",
+                    "name": "ESCALIVADA",
+                    "image": "media/images/pizza-escalivada.jpg",
+                    "ingredients": [
+                        "Pimiento escalivado",
+                        "Berenjena escalivada",
+                        "Cebolla escalivada",
+                        "Queso de cabra",
+                        "Olivas negras"
+                    ]
+                },
+                {
+                    "id": "burrata-capresse",
+                    "name": "BURRATA CAPRESSE",
+                    "image": "media/images/pizza-burrata-capresse.jpg",
+                    "ingredients": [
+                        "Salsa de tomate",
+                        "Burrata",
+                        "Cherrys",
+                        "Albahaca",
+                        "Olivas negras",
+                        "Rúcula"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "temporada",
+            "label": "De temporada",
+            "pizzas": [
+                {
+                    "id": "sol-de-tardor",
+                    "name": "SOL DE TARDOR",
+                    "image": "media/images/pizza-sol-de-tardor.jpg",
+                    "ingredients": [
+                        "Nata",
+                        "Espinacas",
+                        "Calabaza",
+                        "Burrata",
+                        "Huevo",
+                        "Aceite de romero",
+                        "Salvia",
+                        "Limón"
+                    ]
+                },
+                {
+                    "id": "teixi",
+                    "name": "TEIXI",
+                    "image": "media/images/pizza-teixi.jpg",
+                    "ingredients": [
+                        "Salsa de tomate",
+                        "Algo de mozarella",
+                        "Calçots",
+                        "Chistorra (tomate seco en opción vegetariana)",
+                        "Nueces",
+                        "Salsa romesco"
+                    ]
+                }
+            ]
+        }
+    ]
+}

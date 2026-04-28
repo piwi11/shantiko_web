@@ -1,0 +1,18 @@
+<!-- pizzas -->
+<section id="main-pizzas" class="menu_section">
+    <div
+        class="gradient-container gradient-container--yellow"
+    ></div>
+    <div class="content_wrapper">
+        <h4>{{ t.pizzas.heading }}</h4>
+        <p class="content_text">
+            {{ t.pizzas.intro }}
+            <br />
+            {{ t.pizzas.vegan_note | safe }}
+        </p>
+    </div>
+
+    {% for category in pizzas.categories %}
+        {% include "components/pizza-carousel.njk" %}
+    {% endfor %}
+</section>

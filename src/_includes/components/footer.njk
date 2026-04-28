@@ -1,0 +1,51 @@
+<footer id="main-footer" class="menu_section">
+    <div class="gradient-container gradient-container--yellow"></div>
+    <div class="content_wrapper">
+        <h4>{{ t.footer.heading }}</h4>
+        <div id="footer_cols">
+            <div id="footer_text">
+                <p class="content_text">{{ t.footer.p1 }}</p>
+                <p class="content_text">{{ t.footer.p2 }}</p>
+            </div>
+            <div>
+                <p class="content_text">{{ t.footer.form_intro }}</p>
+                <details id="details_form">
+                    <summary class="content_text text-accent">
+                        {{ t.footer.form_label }}
+                    </summary>
+                    <div id="footer_form">
+                        <iframe
+                            src="https://docs.google.com/forms/d/e/1FAIpQLSe8eTyKJObjKJVyf9loIPz4ANfoSljc0z1wnKiaDJNwTJwR9Q/viewform?embedded=true"
+                            width="360"
+                            height="1700"
+                            frameborder="0"
+                            marginheight="0"
+                            marginwidth="0"
+                            >Cargando…</iframe
+                        >
+                    </div>
+                </details>
+            </div>
+            <div id="footer_social">
+                <a
+                    href="https://www.instagram.com/shantiko.pizzas/"
+                    target="_blank"
+                >
+                    <img
+                        src="media/images/instagram.png"
+                        alt="Instagram"
+                    />
+                    <span>{{ t.footer.instagram }}</span>
+                </a>
+                <a href="mailto:{{ t.footer.email }}">
+                    <img src="media/images/email.png" alt="Email" />
+                    <span>{{ t.footer.email }}</span>
+                </a>
+                <p class="title-font font-variant-logo">
+                    <br />{{ t.footer.copyright | safe }}
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="main-footer-gradient-bottom"></div>
+</footer>
