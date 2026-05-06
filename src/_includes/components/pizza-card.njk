@@ -1,6 +1,6 @@
 {# Pizza card component
    Parameters:
-     - pizza: { id, name, image, ingredients }
+     - pizza: { id, name, image, ingredients: { es, ca, en } }
      - t: translations object (needs t.pizzas.ingredients_label and t.pizzas.back_label)
 #}
 <li class="glide__slide">
@@ -9,7 +9,7 @@
             <div class="front">
                 <figure class="polaroid">
                     <img
-                        src="{{ pizza.image }}"
+                        src="/{{ pizza.image }}"
                         alt="pizza image"
                     />
                     <figcaption class="polaroid_title">
@@ -25,7 +25,7 @@
                     {{ pizza.name }}
                 </h4>
                 <ul>
-                    {% for ingredient in pizza.ingredients %}
+                    {% for ingredient in pizza.ingredients[t.lang] %}
                     <li>{{ ingredient }}</li>
                     {% endfor %}
                 </ul>

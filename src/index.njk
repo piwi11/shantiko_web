@@ -1,5 +1,11 @@
 ---
 layout: layouts/base.njk
+pagination:
+    data: allTranslations
+    size: 1
+    alias: t
+    resolve: values
+permalink: "{{ t.lang }}/index.html"
 ---
 {% include "components/header.njk" %}
 <main>

@@ -1,7 +1,7 @@
 <header id="main-header">
     <a href="#"
         ><img
-            src="media/images/shantiko_logo.gif"
+            src="/media/images/shantiko_logo.gif"
             alt="Logotipo de Shantiko"
     /></a>
     <h1><span>S</span>hanti<span>k</span>o <br /><b>Pizzas</b></h1>
@@ -43,6 +43,11 @@
                 >
             </li>
         </ul>
+    </nav>
+    <nav class="lang-switcher" aria-label="Language selector">
+        {% for code, trans in allTranslations %}
+        <a href="/{{ code }}/" hreflang="{{ code }}" class="lang-switcher__link{% if t.lang == code %} lang-switcher__link--active{% endif %}">{{ code | upper }}</a>
+        {% endfor %}
     </nav>
     <button onclick="toggleMenu()" id="menu_button">
         <svg
@@ -100,3 +105,4 @@
         >&#10006; {{ t.nav.close }}</a
     >
 </nav>
+

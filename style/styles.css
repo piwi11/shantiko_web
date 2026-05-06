@@ -686,3 +686,34 @@ details main {
     --text-font: "Kavivanar", "Averia Libre", serif;
     /*--text-font: "Lato", serif;*/
 }
+
+/* Language switcher */
+.lang-switcher {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin: auto 8px;
+}
+
+.lang-switcher__link {
+    font-family: var(--title-font);
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--primary-color);
+    text-decoration: none;
+    padding: 3px 6px;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    transition: color 0.2s, border-color 0.2s;
+    letter-spacing: 0.05em;
+}
+
+.lang-switcher__link:hover {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+.lang-switcher__link--active {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+}
