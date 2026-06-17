@@ -1,0 +1,62 @@
+{
+    "lang": "de",
+    "site": {
+        "title": "ShantiKo PIZZAS",
+        "description": "Pizza-Foodtruck aus La Garrotxa"
+    },
+    "nav": {
+        "home": "Startseite",
+        "welcome": "Willkommen",
+        "pizzas": "Pizzas",
+        "shantiko": "ShantiKo",
+        "contact": "Kontakt",
+        "close": "Schließen"
+    },
+    "hero": {
+        "heading": "Handgemachte Steinofen-Pizza aus dem Foodtruck",
+        "tagline": "mit viel Liebe zubereitet",
+        "description": "Direkt zu Ihren Events und Feiern <br />überall in Katalonien",
+        "cta": "Pizzas ansehen",
+        "cta_video": "Video ansehen"
+    },
+    "about": {
+        "heading": "Willkommen",
+        "founders": "Wir sind <b><em>Marita</em></b> und <b><em>Estela</em></b>, die Gründerinnen von <em class=\"title-font text-primary font-variant-logo\">ShantiKo PIZZAS</em>.",
+        "p1": "Dieses Projekt auf Rädern entstand inmitten von Vulkanen, nach mehr als einem Jahrzehnt, in dem wir Pizzas in einem symbolträchtigen Dorf in La Garrotxa angeboten haben. <br />Unser Abenteuergeist hat uns angetrieben, unser Handwerk als Pizzaiolas zu neuen Horizonten zu führen.",
+        "p2": "Unsere Pizzas aus Bio-Mehl werden frisch und in handwerklicher Arbeit zubereitet. <br />Wir lieben es, uns um jedes Detail des Prozesses zu kümmern:",
+        "qualities": [
+            "Auswahl an frischen und hochwertigen Produkten.",
+            "Lange Teiggärung, um die Pizza bekömmlicher und leichter verdaulich zu machen.",
+            "Backen im Holzofen für den unverwechselbaren Geschmack und die Textur einer über dem Feuer gebackenen Pizza."
+        ],
+        "p3": "Die Liebe zu dem, was wir tun, und die Motivation, mit köstlichen und guten Lebensmitteln der Erde zu nähren, sind die <b>wesentlichen Zutaten unserer Pizzas</b>."
+    },
+    "pizzas": {
+        "heading": "Unsere Pizzas",
+        "intro": "Wir passen unsere Karte an die Bedürfnisse jedes Events an und bieten meist tagesaktuelle Pizzas mit saisonalen Produkten an.",
+        "vegan_note": "Sie können jede Pizza mit <u>veganem Käse</u> bestellen.",
+        "ingredients_label": "ZUTATEN",
+        "back_label": "ZURÜCK"
+    },
+    "shantiko": {
+        "heading": "Für Neugierige: Der Ursprung von ShantiKo",
+        "p1": "Dieses Unternehmen entstand in aller Ruhe, zwischen Pizza und Pizza, Gesängen und Reflexionen in einer gemütlichen und herzlichen Ecke von La Garrotxa.",
+        "p2": "Es entspringt tief aus unseren Herzen als ein gemeinsamer Traum, unseren Horizont zu erweitern und das, was uns fasziniert, über die bekannten Grenzen hinauszutragen.",
+        "p3": "Im Wort <span class=\"title-font text-primary font-variant-logo\">ShantiKo</span> fließen verschiedene Konzepte und Energien zusammen, die unser Projekt und die ihm zugrunde liegende Philosophie definieren.",
+        "more_label": "Mehr erfahren",
+        "p4": "Einerseits ist unser Name <span class=\"title-font text-primary font-variant-logo\">ShantiKo</span> zweifellos von der aztekischen Göttin <span class=\"title-font font-variant-logo\">Chantico</span> und all ihren Eigenschaften inspiriert. Sie repräsentiert unter anderem das innere Feuer, das Feuer des Herzens, das weibliche Feuer und das alchemistische Feuer von Speisen, die das Heim nähren.",
+        "p5": "Es ist somit ein Anliegen, von Frauen geführte Unternehmen wie das unsere, die aus dem inneren Funken entstehen, anzuerkennen und ihnen Raum zu geben. <span class=\"title-font font-variant-logo\">Chantico</span> ist auch mit dem inneren Feuer der Erde verbunden, mit den Vulkanen von La Garrotxa, die Zeugen unserer Schritte sind.",
+        "p6": "Es ist eine Hommage an das Feuer – jenes lebendige und sich bewegende Element, das wir jedes Mal entzünden und pflegen, wenn wir unsere Pizzeria in Betrieb nehmen, und das den Unterschied im Geschmack einer Pizza ausmacht.",
+        "p7": "Ein anderer Blick auf unseren Namen könnte <em class=\"title-font text-primary font-variant-logo\">Shanti</em> und <em class=\"title-font text-primary font-variant-logo\">Ko</em> sein. <br />Dabei verstehen wir <span class=\"title-font font-variant-logo\">Shanti</span> als das Sanskrit-Wort, das mit einem Zustand der Ruhe, des Friedens und der Harmonie verbunden ist – jener Zustand, aus dem heraus wir unserem Projekt und dem Leben selbst begegnen möchten. Und <span class=\"title-font font-variant-logo\">Ko</span> steht für die beiden Buchstaben, die uns zum Konzept von Kooperation und Kollektivierung von Energien und Ressourcen führen, um ein Projekt zu verwirklichen."
+    },
+    "footer": {
+        "heading": "Kontakt",
+        "p1": "Wir reisen durch ganz Katalonien, um zu Ihrem Event zu gelangen. Genießen Sie unsere nomadische Pizzeria mit allen Sinnen.",
+        "p2": "Sie können unsere Dienstleistungen buchen, egal ob Sie ein Festival, einen Markt oder eine Messe organisieren oder eine private Feier ausrichten möchten.",
+        "form_intro": "Füllen Sie das folgende Formular aus und erklären Sie uns, wie wir Ihr Event noch einzigartiger machen können:",
+        "form_label": "Formular für Events",
+        "instagram": "@shantiko.pizzas",
+        "email": "info@shantiko.com",
+        "copyright": "&copy; ShantiKo"
+    }
+}

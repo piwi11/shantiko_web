@@ -9,7 +9,7 @@
         "welcome": "Benvinguda",
         "pizzas": "Pizzes",
         "shantiko": "ShantiKo",
-        "contact": "ConTacte",
+        "contact": "Contacte",
         "close": "Tancar"
     },
     "hero": {
@@ -27,7 +27,7 @@
         "qualities": [
             "Triant productes frescos i de qualitat.",
             "Apostant per fermentacions llargues de la massa per fer-la més saludable i fàcil de digerir.",
-            "Cuinant al forn de llenya per aconseguir aquell sabor i textura inconfusible d'una pizza feta al foc"
+            "Cuinant al forn de llenya per aconseguir aquell sabor i textura inconfusible d'una pizza feta al foc."
         ],
         "p3": "L'amor per allò que fem i la motivació de nodrir amb saborosos i bons aliments de la terra són els <b>ingredients essencials de les nostres pizzes</b>."
     },
@@ -40,7 +40,7 @@
     },
     "shantiko": {
         "heading": "Per als més curiosos: origen de ShantiKo",
-        "p1": "Aquest emprenedorisme neix a foc lent, entre pizza i pizza, cants i reflexions en un racó càlid i entranyable de la Garrotxa.",
+        "p1": "Aquesta emprenedoria neix a foc lent, entre pizza i pizza, cants i reflexions en un racó càlid i entranyable de la Garrotxa.",
         "p2": "Sorgeix des del profund dels nostres cors com un somni en comú d'ampliar els nostres horitzons, i de portar allò que ens apassiona més enllà dels límits ja coneguts.",
         "p3": "En la paraula <span class=\"title-font text-primary font-variant-logo\">ShantiKo</span> convergeixen diferents conceptes i energies que defineixen el nostre projecte i la filosofia que ens sustenta.",
         "more_label": "Saber més",
@@ -57,6 +57,6 @@
         "form_label": "Formulari per a esdeveniments",
         "instagram": "@shantiko.pizzas",
         "email": "info@shantiko.com",
-        "copyright": "&copy; ShantiKo 2025"
+        "copyright": "&copy; ShantiKo"
     }
 }

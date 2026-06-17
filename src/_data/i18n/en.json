@@ -27,7 +27,7 @@
         "qualities": [
             "Choosing fresh, quality products.",
             "Going for long dough fermentations to make it healthier and easier to digest.",
-            "Cooking in a wood-fired oven to achieve that unmistakable flavour and texture of a fire-baked pizza"
+            "Cooking in a wood-fired oven to achieve that unmistakable flavour and texture of a fire-baked pizza."
         ],
         "p3": "Our love for what we do and our drive to nourish with delicious, wholesome food from the land are the <b>essential ingredients of our pizzas</b>."
     },
@@ -40,7 +40,7 @@
     },
     "shantiko": {
         "heading": "For the most curious: the origin of ShantiKo",
-        "p1": "This venture was born slowly, between pizza and pizza, songs and reflections in a warm and endearing corner of La Garrotxa.",
+        "p1": "This venture was born slowly, between pizza and pizza, chants and reflections in a warm and endearing corner of La Garrotxa.",
         "p2": "It springs from the depths of our hearts as a shared dream to broaden our horizons and take what we are passionate about beyond the already known limits.",
         "p3": "In the word <span class=\"title-font text-primary font-variant-logo\">ShantiKo</span> different concepts and energies converge that define our project and the philosophy that sustains us.",
         "more_label": "Learn more",
@@ -52,11 +52,11 @@
     "footer": {
         "heading": "Contact",
         "p1": "We travel all over Catalonia to reach your event. Enjoy our nomadic pizzeria with all your senses.",
-        "p2": "You can hire our services whether you are organising a festival, market, fair, or if you want to celebrate a private event.",
+        "p2": "You can hire our services whether you are organising a festival, markets, fair, or if you want to celebrate a private event.",
         "form_intro": "Fill in the form and tell us how we can make your event even more unique:",
         "form_label": "Event enquiry form",
         "instagram": "@shantiko.pizzas",
         "email": "info@shantiko.com",
-        "copyright": "&copy; ShantiKo 2025"
+        "copyright": "&copy; ShantiKo"
     }
 }

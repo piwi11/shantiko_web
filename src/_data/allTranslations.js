@@ -6,5 +6,7 @@
 import es from "./i18n/es.json" with { type: "json" };
 import ca from "./i18n/ca.json" with { type: "json" };
 import en from "./i18n/en.json" with { type: "json" };
+import de from "./i18n/de.json" with { type: "json" };
+import nl from "./i18n/nl.json" with { type: "json" };
 
-export default { es, ca, en };
+export default { es, ca, en, de, nl };

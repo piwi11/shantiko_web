@@ -9,7 +9,7 @@
         "welcome": "Bienvenida",
         "pizzas": "Pizzas",
         "shantiko": "ShantiKo",
-        "contact": "ConTacto",
+        "contact": "Contacto",
         "close": "Cerrar"
     },
     "hero": {
@@ -27,7 +27,7 @@
         "qualities": [
             "Eligiendo productos frescos y de calidad.",
             "Apostando por fermentaciones largas de la masa para hacerla más saludable y fácil de digerir.",
-            "Cocinando al horno de leña para conseguir ese sabor y textura inconfundible de una pizza hecha al fuego"
+            "Cocinando al horno de leña para conseguir ese sabor y textura inconfundible de una pizza hecha al fuego."
         ],
         "p3": "El amor por lo que hacemos y la motivación de nutrir con sabrosos y buenos alimentos de la tierra son los <b>ingredientes esenciales de nuestras pizzas</b>."
     },
@@ -47,7 +47,7 @@
         "p4": "Por un lado, indudablemente, nuestro nombre <span class=\"title-font text-primary font-variant-logo\">ShantiKo</span> surge de la inspiración de la diosa azteca <span class=\"title-font font-variant-logo\">Chantico</span> y de todas sus cualidades. Ella representa el fuego interno, el fuego del corazón, el fuego femenino y el fuego alquímico de los alimentos que nutren el hogar, entre otras muchas cosas.",
         "p5": "Así pues, es un propósito de reconocer y dar lugar a los emprendimientos en femenino, como el nuestro, que nacen desde la chispa interna. <span class=\"title-font font-variant-logo\">Chantico</span> también se vincula al fuego interno de la tierra, de los volcanes de la Garrotxa que son testigos de nuestros pasos.",
         "p6": "Es un homenaje al fuego, ese elemento vivo y en movimiento, que encendemos y cuidamos cada vez que ponemos en marcha nuestra pizzeria, y que marca la diferencia en el sabor de una pizza.",
-        "p7": "Otra mirada a nuestro nombre podría ser <em class=\"title-font text-primary font-variant-logo\">Shanti</em> y <em class=\"title-font text-primary font-variant-logo\">Ko</em>. <br />Entendiendo <span class=\"title-font font-variant-logo\">Shanti</span> como esa palabra en sánscrito vinculada a un estado de calma, paz y harmonia. Ese estado desde el cual nos gusta abordar nuestro proyecto y la vida misma. y <span class=\"title-font font-variant-logo\">Ko</span>, esas dos letras que nos llevan al concepto de Kooperar, y Kolectivizar, energias y recursos para manifestar un proyecto."
+        "p7": "Otra mirada a nuestro nombre podría ser <em class=\"title-font text-primary font-variant-logo\">Shanti</em> y <em class=\"title-font text-primary font-variant-logo\">Ko</em>. <br />Entendiendo <span class=\"title-font font-variant-logo\">Shanti</span> como esa palabra en sánscrito vinculada a un estado de calma, paz y armonía. Ese estado desde el cual nos gusta abordar nuestro proyecto y la vida misma. y <span class=\"title-font font-variant-logo\">Ko</span>, esas dos letras que nos llevan al concepto de Kooperar, y Kolectivizar, energias y recursos para manifestar un proyecto."
     },
     "footer": {
         "heading": "ConTacto",
@@ -57,6 +57,6 @@
         "form_label": "Formulario para eventos",
         "instagram": "@shantiko.pizzas",
         "email": "info@shantiko.com",
-        "copyright": "&copy; ShantiKo 2025"
+        "copyright": "&copy; ShantiKo"
     }
 }
