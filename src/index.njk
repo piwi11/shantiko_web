@@ -7,11 +7,11 @@ pagination:
     resolve: values
 permalink: "{{ t.lang }}/index.html"
 ---
-{% include "components/header.njk" %}
+{% include "sections/header.njk" %}
 <main>
     {% include "sections/_hero.njk" %}
     {% include "sections/_about-us.njk" %}
     {% include "sections/_pizzas.njk" %}
     {% include "sections/_shantiko.njk" %}
 </main>
-{% include "components/footer.njk" %}
+{% include "sections/footer.njk" %}
