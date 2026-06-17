@@ -481,12 +481,7 @@ body > main > section h5 {
 }
 
 .polaroid_link span {
-    display: none;
-}
-@media (min-width: 1440px) {
-    .polaroid_link span {
-        display: inline-block;
-    }
+    display: inline-block;
 }
 
 .polaroid ul {
