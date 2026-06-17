@@ -44,7 +44,7 @@
             </li>
         </ul>
     </nav>
-    <nav class="lang-switcher" aria-label="Language selector">
+    <div class="lang-switcher" aria-label="Language selector">
         <select
             id="lang-switcher-select"
             class="lang-switcher__select"
@@ -55,7 +55,7 @@
             <option value="/{{ code }}/"{% if t.lang == code %} selected{% endif %}>{{ code | upper }}</option>
             {% endfor %}
         </select>
-    </nav>
+    </div>
     <button onclick="toggleMenu()" id="menu_button">
         <svg
             xmlns="http://www.w3.org/2000/svg"

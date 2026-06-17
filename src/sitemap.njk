@@ -1,0 +1,23 @@
+---
+permalink: /sitemap.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <url>
+        <loc>{{ site.url }}/</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    {% for code, trans in allTranslations %}
+    <url>
+        <loc>{{ site.url }}/{{ code }}/</loc>
+        <changefreq>weekly</changefreq>
+        <priority>{% if code == "es" %}1.0{% else %}0.9{% endif %}</priority>
+        {% for altCode, altTrans in allTranslations %}
+        <xhtml:link rel="alternate" hreflang="{{ altCode }}" href="{{ site.url }}/{{ altCode }}/" />
+        {% endfor %}
+        <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}/es/" />
+    </url>
+    {% endfor %}
+</urlset>
