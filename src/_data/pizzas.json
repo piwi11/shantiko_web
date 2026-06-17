@@ -19,7 +19,7 @@
                         "de": "MARGARITA",
                         "nl": "MARGARITA"
                     },
-                    "image": "media/images/pizza-placeholder.jpg",
+                    "image": "media/images/pizza-margarita.jpg",
                     "ingredients": {
                         "es": [
                             "Salsa de tomate",
@@ -278,9 +278,9 @@
                     "name": {
                         "es": "MEXICANA",
                         "ca": "MEXICANA",
-                        "en": "MEXICANA",
-                        "de": "MEXICANA",
-                        "nl": "MEXICANA"
+                        "en": "MEXICAN",
+                        "de": "MEXIKANA",
+                        "nl": "MEXICAANS"
                     },
                     "image": "media/images/pizza-mexicana.jpg",
                     "ingredients": {
@@ -326,9 +326,9 @@
                     "name": {
                         "es": "IAIA PAQUITA",
                         "ca": "IAIA PAQUITA",
-                        "en": "IAIA PAQUITA",
-                        "de": "IAIA PAQUITA",
-                        "nl": "IAIA PAQUITA"
+                        "en": "GRANNY PAQUITA",
+                        "de": "OMA PAQUITA",
+                        "nl": "OMA PAQUITA"
                     },
                     "image": "media/images/pizza-iaia-paquita.jpg",
                     "ingredients": {

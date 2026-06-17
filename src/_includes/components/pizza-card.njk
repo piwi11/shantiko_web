@@ -16,13 +16,13 @@
                         {{ t.pizza.name }}
                     </figcaption>
                     <span class="polaroid_link">
-                        <span>{{ t.pizzas.ingredients_label }}</span> →
+                        <span>{{  pizza.name[t.lang] }}</span> →
                     </span>
                 </figure>
             </div>
             <div class="back polaroid">
                 <h4 class="polaroid_title">
-                    {{ pizza.name }}
+                    {{ pizza.name[t.lang] }}
                 </h4>
                 <ul>
                     {% for ingredient in pizza.ingredients[t.lang] %}
