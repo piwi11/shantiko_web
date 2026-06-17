@@ -44,11 +44,18 @@
             </li>
         </ul>
     </nav>
-    <nav class="lang-switcher" aria-label="Language selector">
-        {% for code, trans in allTranslations %}
-        <a href="/{{ code }}/" hreflang="{{ code }}" class="lang-switcher__link{% if t.lang == code %} lang-switcher__link--active{% endif %}">{{ code | upper }}</a>
-        {% endfor %}
-    </nav>
+    <div class="lang-switcher" aria-label="Language selector">
+        <select
+            id="lang-switcher-select"
+            class="lang-switcher__select"
+            aria-label="Language selector"
+            onchange="window.location.href=this.value"
+        >
+            {% for code, trans in allTranslations %}
+            <option value="/{{ code }}/"{% if t.lang == code %} selected{% endif %}>{{ code | upper }}</option>
+            {% endfor %}
+        </select>
+    </div>
     <button onclick="toggleMenu()" id="menu_button">
         <svg
             xmlns="http://www.w3.org/2000/svg"

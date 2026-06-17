@@ -332,7 +332,8 @@ body > main > section h5 {
     top: -20%;
     opacity: 0.7;
     background-color: var(--secondary-color);
-    background-image: radial-gradient(
+    background-image:
+        radial-gradient(
             at 80% 100%,
             var(--primary-color-light) 0px,
             transparent 50%
@@ -363,7 +364,8 @@ body > main > section h5 {
 }
 
 #main-hero .hero_text > * {
-    text-shadow: 2px 2px 12px var(--tertiary-color),
+    text-shadow:
+        2px 2px 12px var(--tertiary-color),
         -2px 2px 12px var(--tertiary-color);
     font-family: var(--title-font);
 }
@@ -479,12 +481,7 @@ body > main > section h5 {
 }
 
 .polaroid_link span {
-    display: none;
-}
-@media (min-width: 1440px) {
-    .polaroid_link span {
-        display: inline-block;
-    }
+    display: inline-block;
 }
 
 .polaroid ul {
@@ -621,7 +618,9 @@ details[open]::details-content {
 details::details-content {
     height: 0;
     overflow-y: clip;
-    transition: content-visibility 475ms allow-discrete, height 475ms;
+    transition:
+        content-visibility 475ms allow-discrete,
+        height 475ms;
 }
 
 details main {
@@ -695,25 +694,21 @@ details main {
     margin: auto 8px;
 }
 
-.lang-switcher__link {
+.lang-switcher__select {
     font-family: var(--title-font);
     font-size: 13px;
     font-weight: 700;
-    color: var(--primary-color);
-    text-decoration: none;
-    padding: 3px 6px;
+    color: var(--accent-color);
+    background-color: var(--white-color);
+    padding: 3px 24px 3px 6px;
     border-radius: 4px;
-    border: 1px solid transparent;
-    transition: color 0.2s, border-color 0.2s;
+    border-color: var(--accent-color);
+    border-width: 1px;
     letter-spacing: 0.05em;
+    cursor: pointer;
 }
 
-.lang-switcher__link:hover {
-    color: var(--accent-color);
-    border-color: var(--accent-color);
-}
-
-.lang-switcher__link--active {
-    color: var(--accent-color);
-    border-color: var(--accent-color);
+.lang-switcher__select:focus-visible {
+    outline: 2px solid var(--primary-color-light);
+    outline-offset: 1px;
 }

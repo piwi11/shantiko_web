@@ -25,11 +25,8 @@ Array.from(flips).forEach(function (element) {
 function initGlide(glide) {
     const glideInstance = new Glide(glide, {
         bound: true,
-        perView: 6,
+        perView: 4,
         breakpoints: {
-            1600: {
-                perView: 4
-            },
             900: {
                 perView: 3
             },
@@ -152,7 +149,8 @@ function updateActiveClass(elements, href) {
 
 function activateLightbox() {
     const heroButon = document.getElementById("hero_btn");
-    heroButon.innerText = "Ver Video";
+    const text = heroButon.getAttribute("data-text");
+    heroButon.innerText = text;
     heroButon.setAttribute("data-fslightbox", "hero");
     heroButon.setAttribute("data-id", "hero_video_lightbox");
     heroButon.setAttribute("href", heroButon.getAttribute("data-href"));
