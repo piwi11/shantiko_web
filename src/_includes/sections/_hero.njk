@@ -1,0 +1,69 @@
+<!-- hero video -->
+<section id="main-hero" class="menu_section">
+    <div class="main-hero-gradient"></div>
+    <video
+        id="hero-video"
+        class="full-width-video"
+        loop
+        autoplay
+        playsinline
+        muted
+        data-desktop-src="/media/videos/shantiko_hero_h.mp4"
+        data-desktop-poster="/media/images/shantiko_hero_h.jpg"
+        data-mobile-src="/media/videos/shantiko_hero_v.mp4"
+        data-mobile-poster="/media/images/shantiko_hero_v.jpg"
+    ></video>
+    <script>
+        /* define our wide breakpoint for the desktop video - this must match the CSS and preloads! */
+        /* define a match on the media query for us to share logic with CSS in JS */
+        const portraitViewport = window.matchMedia(
+            `(orientation: landscape)`
+        );
+        /* define a minimum downlink bandwidth to show the video */
+        const MIN_DOWNLINK = 1; // Slow 3G ~~ 0.4, Fast 3G ~~ 1.4
+        function resizeVideo(viewportOrientation) {
+            let videoEl = document.getElementById("hero-video");
+            // default to mobile video source and poster
+            let src = videoEl.dataset.mobileSrc;
+            let poster = videoEl.dataset.mobilePoster;
+            if (viewportOrientation.matches) {
+                // override for desktop if the media query for a wide vieport matches
+                src = videoEl.dataset.desktopSrc;
+                poster = videoEl.dataset.desktopPoster;
+            }
+            let downlink = MIN_DOWNLINK;
+            try {
+                downlink = navigator.connection.downlink;
+            } catch (e) {
+                console.log(`Unable to determine downlink`);
+            }
+            if (videoEl.src !== src) {
+                // only override values if they differ
+                if (downlink >= MIN_DOWNLINK) {
+                    videoEl.src = src;
+                } else {
+                    console.log(
+                        `Not showing video due to low bandwidth`
+                    );
+                }
+                videoEl.poster = poster;
+            }
+        }
+        portraitViewport.addListener(resizeVideo);
+        resizeVideo(portraitViewport);
+    </script>
+    <div class="content_wrapper">
+        <div class="hero_text">
+            <h2>{{ t.hero.heading }}</h2>
+            <p>{{ t.hero.tagline }}</p>
+            <p>{{ t.hero.description | safe }}</p>
+            <a
+                href="#main-pizzas"
+                class="button font-variant-logo"
+                id="hero_btn"
+                data-href="/media/videos/shantiko_presentacion.mp4"
+                >{{ t.hero.cta }}</a
+            >
+        </div>
+    </div>
+</section>

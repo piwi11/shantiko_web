@@ -1,0 +1,564 @@
+{
+    "categories": [
+        {
+            "id": "basicos",
+            "label": {
+                "es": "Básicos",
+                "ca": "Bàsics",
+                "en": "Basics"
+            },
+            "pizzas": [
+                {
+                    "id": "margarita",
+                    "name": "MARGARITA",
+                    "image": "media/images/pizza-placeholder.jpg",
+                    "ingredients": {
+                        "es": [
+                            "Salsa de tomate",
+                            "Mozzarella",
+                            "Aceite de Albahaca (opcional)"
+                        ],
+                        "ca": [
+                            "Salsa de tomàquet",
+                            "Mozzarella",
+                            "Oli d'alfàbrega (opcional)"
+                        ],
+                        "en": [
+                            "Tomato sauce",
+                            "Mozzarella",
+                            "Basil oil (optional)"
+                        ]
+                    }
+                },
+                {
+                    "id": "prosciutto",
+                    "name": "PROSCIUTTO",
+                    "image": "media/images/pizza-prosciutto.jpg",
+                    "ingredients": {
+                        "es": [
+                            "Salsa de tomate",
+                            "Mozzarella",
+                            "Jamón dulce"
+                        ],
+                        "ca": [
+                            "Salsa de tomàquet",
+                            "Mozzarella",
+                            "Pernil dolç"
+                        ],
+                        "en": [
+                            "Tomato sauce",
+                            "Mozzarella",
+                            "Ham"
+                        ]
+                    }
+                },
+                {
+                    "id": "sotabosc",
+                    "name": "SOTABOSC",
+                    "image": "media/images/pizza-sotabosc.jpg",
+                    "ingredients": {
+                        "es": [
+                            "Salsa de tomate",
+                            "Mozzarella",
+                            "Jamón dulce",
+                            "Champiñones"
+                        ],
+                        "ca": [
+                            "Salsa de tomàquet",
+                            "Mozzarella",
+                            "Pernil dolç",
+                            "Xampinyons"
+                        ],
+                        "en": [
+                            "Tomato sauce",
+                            "Mozzarella",
+                            "Ham",
+                            "Mushrooms"
+                        ]
+                    }
+                },
+                {
+                    "id": "4formatges",
+                    "name": "4FORMATGES",
+                    "image": "media/images/pizza-4formatges.jpg",
+                    "ingredients": {
+                        "es": [
+                            "Salsa de tomate",
+                            "Mozzarella",
+                            "Brie",
+                            "Provolone",
+                            "Roquefort"
+                        ],
+                        "ca": [
+                            "Salsa de tomàquet",
+                            "Mozzarella",
+                            "Brie",
+                            "Provolone",
+                            "Roquefort"
+                        ],
+                        "en": [
+                            "Tomato sauce",
+                            "Mozzarella",
+                            "Brie",
+                            "Provolone",
+                            "Roquefort"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": "carnivoras",
+            "label": {
+                "es": "Carnívoras",
+                "ca": "Carnívores",
+                "en": "Meat Lovers"
+            },
+            "pizzas": [
+                {
+                    "id": "diavola",
+                    "name": "DIAVOLA",
+                    "image": "media/images/pizza-diavola.jpg",
+                    "ingredients": {
+                        "es": [
+                            "Salsa de tomate",
+                            "Mozzarella",
+                            "Guiso de ternera picante",
+                            "Cebolla"
+                        ],
+                        "ca": [
+                            "Salsa de tomàquet",
+                            "Mozzarella",
+                            "Guisat de vedella picant",
+                            "Ceba"
+                        ],
+                        "en": [
+                            "Tomato sauce",
+                            "Mozzarella",
+                            "Spicy beef stew",
+                            "Onion"
+                        ]
+                    }
+                },
+                {
+                    "id": "perola",
+                    "name": "PEROLA",
+                    "image": "media/images/pizza-perola.jpg",
+                    "ingredients": {
+                        "es": [
+                            "Salsa de tomate",
+                            "Mozzarella",
+                            "Pera",
+                            "Jamón serrano",
+                            "Gorgonzola",
+                            "Rúcula"
+                        ],
+                        "ca": [
+                            "Salsa de tomàquet",
+                            "Mozzarella",
+                            "Pera",
+                            "Pernil serrat",
+                            "Gorgonzola",
+                            "Rúcola"
+                        ],
+                        "en": [
+                            "Tomato sauce",
+                            "Mozzarella",
+                            "Pear",
+                            "Serrano ham",
+                            "Gorgonzola",
+                            "Rocket"
+                        ]
+                    }
+                },
+                {
+                    "id": "mexicana",
+                    "name": "MEXICANA",
+                    "image": "media/images/pizza-mexicana.jpg",
+                    "ingredients": {
+                        "es": [
+                            "Salsa de tomate",
+                            "Mozzarella",
+                            "Pollo guisado con cebolla",
+                            "Pimiento rojo",
+                            "Guindilla"
+                        ],
+                        "ca": [
+                            "Salsa de tomàquet",
+                            "Mozzarella",
+                            "Pollastre guisat amb ceba",
+                            "Pebrot vermell",
+                            "Bitxo"
+                        ],
+                        "en": [
+                            "Tomato sauce",
+                            "Mozzarella",
+                            "Braised chicken with onion",
+                            "Red pepper",
+                            "Chilli"
+                        ]
+                    }
+                },
+                {
+                    "id": "iaia-paquita",
+                    "name": "IAIA PAQUITA",
+                    "image": "media/images/pizza-iaia-paquita.jpg",
+                    "ingredients": {
+                        "es": [
+                            "Salsa de tomate",
+                            "Mozzarella",
+                            "Cebolla",
+                            "Pimiento verde",
+                            "Morcilla de Burgos"
+                        ],
+                        "ca": [
+                            "Salsa de tomàquet",
+                            "Mozzarella",
+                            "Ceba",
+                            "Pebrot verd",
+                            "Botifarra de Burgos"
+                        ],
+                        "en": [
+                            "Tomato sauce",
+                            "Mozzarella",
+                            "Onion",
+                            "Green pepper",
+                            "Burgos black pudding"
+                        ]
+                    }
+                },
+                {
+                    "id": "roc",
+                    "name": "ROC",
+                    "image": "media/images/pizza-roc.jpg",
+                    "ingredients": {
+                        "es": [
+                            "Salsa de tomate",
+                            "Mozzarella",
+                            "Beicon",
+                            "Cebolla",
+                            "Champiñones",
+                            "Roquefort"
+                        ],
+                        "ca": [
+                            "Salsa de tomàquet",
+                            "Mozzarella",
+                            "Bacon",
+                            "Ceba",
+                            "Xampinyons",
+                            "Roquefort"
+                        ],
+                        "en": [
+                            "Tomato sauce",
+                            "Mozzarella",
+                            "Bacon",
+                            "Onion",
+                            "Mushrooms",
+                            "Roquefort"
+                        ]
+                    }
+                },
+                {
+                    "id": "carbonara",
+                    "name": "CARBONARA",
+                    "image": "media/images/pizza-carbonara.jpg",
+                    "ingredients": {
+                        "es": [
+                            "Nata",
+                            "Mozzarella",
+                            "Cebolla",
+                            "Champiñones",
+                            "Beicon"
+                        ],
+                        "ca": [
+                            "Nata",
+                            "Mozzarella",
+                            "Ceba",
+                            "Xampinyons",
+                            "Bacon"
+                        ],
+                        "en": [
+                            "Cream",
+                            "Mozzarella",
+                            "Onion",
+                            "Mushrooms",
+                            "Bacon"
+                        ]
+                    }
+                },
+                {
+                    "id": "tirrena",
+                    "name": "TIRRENA",
+                    "image": "media/images/pizza-tirrena.jpg",
+                    "ingredients": {
+                        "es": [
+                            "Salsa de tomate",
+                            "Mozzarella",
+                            "Cebolla",
+                            "Atún",
+                            "Pimiento rojo",
+                            "Olivas negras"
+                        ],
+                        "ca": [
+                            "Salsa de tomàquet",
+                            "Mozzarella",
+                            "Ceba",
+                            "Tonyina",
+                            "Pebrot vermell",
+                            "Olives negres"
+                        ],
+                        "en": [
+                            "Tomato sauce",
+                            "Mozzarella",
+                            "Onion",
+                            "Tuna",
+                            "Red pepper",
+                            "Black olives"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": "vegetarianas",
+            "label": {
+                "es": "Vegetarianas",
+                "ca": "Vegetarianes",
+                "en": "Vegetarian"
+            },
+            "pizzas": [
+                {
+                    "id": "nevada",
+                    "name": "NEVADA",
+                    "image": "media/images/pizza-nevada.jpg",
+                    "ingredients": {
+                        "es": [
+                            "Nata",
+                            "Espinaca",
+                            "Queso de cabra",
+                            "Miel",
+                            "Nueces"
+                        ],
+                        "ca": [
+                            "Nata",
+                            "Espinacs",
+                            "Formatge de cabra",
+                            "Mel",
+                            "Nous"
+                        ],
+                        "en": [
+                            "Cream",
+                            "Spinach",
+                            "Goat's cheese",
+                            "Honey",
+                            "Walnuts"
+                        ]
+                    }
+                },
+                {
+                    "id": "delacasa",
+                    "name": "DELACASA",
+                    "image": "media/images/pizza-delacasa.jpg",
+                    "ingredients": {
+                        "es": [
+                            "Salsa de tomate",
+                            "Mozzarella",
+                            "Champiñones",
+                            "Tomate seco",
+                            "Queso de cabra",
+                            "Rúcula",
+                            "Olivas negras"
+                        ],
+                        "ca": [
+                            "Salsa de tomàquet",
+                            "Mozzarella",
+                            "Xampinyons",
+                            "Tomàquet sec",
+                            "Formatge de cabra",
+                            "Rúcola",
+                            "Olives negres"
+                        ],
+                        "en": [
+                            "Tomato sauce",
+                            "Mozzarella",
+                            "Mushrooms",
+                            "Sun-dried tomato",
+                            "Goat's cheese",
+                            "Rocket",
+                            "Black olives"
+                        ]
+                    }
+                },
+                {
+                    "id": "meraki",
+                    "name": "MERAKI",
+                    "image": "media/images/pizza-meraki.jpg",
+                    "ingredients": {
+                        "es": [
+                            "Salsa de tomate",
+                            "Mozzarella",
+                            "Berenjena asada",
+                            "Tomates secos",
+                            "Parmesano",
+                            "Olivas negras"
+                        ],
+                        "ca": [
+                            "Salsa de tomàquet",
+                            "Mozzarella",
+                            "Albergínia rostida",
+                            "Tomàquets secs",
+                            "Parmesà",
+                            "Olives negres"
+                        ],
+                        "en": [
+                            "Tomato sauce",
+                            "Mozzarella",
+                            "Roasted aubergine",
+                            "Sun-dried tomatoes",
+                            "Parmesan",
+                            "Black olives"
+                        ]
+                    }
+                },
+                {
+                    "id": "escalivada",
+                    "name": "ESCALIVADA",
+                    "image": "media/images/pizza-escalivada.jpg",
+                    "ingredients": {
+                        "es": [
+                            "Pimiento escalivado",
+                            "Berenjena escalivada",
+                            "Cebolla escalivada",
+                            "Queso de cabra",
+                            "Olivas negras"
+                        ],
+                        "ca": [
+                            "Pebrot escalivat",
+                            "Albergínia escalivada",
+                            "Ceba escalivada",
+                            "Formatge de cabra",
+                            "Olives negres"
+                        ],
+                        "en": [
+                            "Roasted pepper",
+                            "Roasted aubergine",
+                            "Roasted onion",
+                            "Goat's cheese",
+                            "Black olives"
+                        ]
+                    }
+                },
+                {
+                    "id": "burrata-capresse",
+                    "name": "BURRATA CAPRESSE",
+                    "image": "media/images/pizza-burrata-capresse.jpg",
+                    "ingredients": {
+                        "es": [
+                            "Salsa de tomate",
+                            "Burrata",
+                            "Cherrys",
+                            "Albahaca",
+                            "Olivas negras",
+                            "Rúcula"
+                        ],
+                        "ca": [
+                            "Salsa de tomàquet",
+                            "Burrata",
+                            "Tomàquets cherry",
+                            "Alfàbrega",
+                            "Olives negres",
+                            "Rúcola"
+                        ],
+                        "en": [
+                            "Tomato sauce",
+                            "Burrata",
+                            "Cherry tomatoes",
+                            "Basil",
+                            "Black olives",
+                            "Rocket"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "id": "temporada",
+            "label": {
+                "es": "De temporada",
+                "ca": "De temporada",
+                "en": "Seasonal"
+            },
+            "pizzas": [
+                {
+                    "id": "sol-de-tardor",
+                    "name": "SOL DE TARDOR",
+                    "image": "media/images/pizza-sol-de-tardor.jpg",
+                    "ingredients": {
+                        "es": [
+                            "Nata",
+                            "Espinacas",
+                            "Calabaza",
+                            "Burrata",
+                            "Huevo",
+                            "Aceite de romero",
+                            "Salvia",
+                            "Limón"
+                        ],
+                        "ca": [
+                            "Nata",
+                            "Espinacs",
+                            "Carbassa",
+                            "Burrata",
+                            "Ou",
+                            "Oli de romaní",
+                            "Sàlvia",
+                            "Llimona"
+                        ],
+                        "en": [
+                            "Cream",
+                            "Spinach",
+                            "Pumpkin",
+                            "Burrata",
+                            "Egg",
+                            "Rosemary oil",
+                            "Sage",
+                            "Lemon"
+                        ]
+                    }
+                },
+                {
+                    "id": "teixi",
+                    "name": "TEIXI",
+                    "image": "media/images/pizza-teixi.jpg",
+                    "ingredients": {
+                        "es": [
+                            "Salsa de tomate",
+                            "Algo de mozzarella",
+                            "Calçots",
+                            "Chistorra (tomate seco en opción vegetariana)",
+                            "Nueces",
+                            "Salsa romesco"
+                        ],
+                        "ca": [
+                            "Salsa de tomàquet",
+                            "Una mica de mozzarella",
+                            "Calçots",
+                            "Chistorra (tomàquet sec en opció vegetariana)",
+                            "Nous",
+                            "Salsa romesco"
+                        ],
+                        "en": [
+                            "Tomato sauce",
+                            "A little mozzarella",
+                            "Calçots",
+                            "Chistorra sausage (sun-dried tomato for vegetarian option)",
+                            "Walnuts",
+                            "Romesco sauce"
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}
+

@@ -1,0 +1,38 @@
+{# Pizza card component
+   Parameters:
+     - pizza: { id, name, image, ingredients: { es, ca, en } }
+     - t: translations object (needs t.pizzas.ingredients_label and t.pizzas.back_label)
+#}
+<li class="glide__slide">
+    <div class="flip-container">
+        <div class="card">
+            <div class="front">
+                <figure class="polaroid">
+                    <img
+                        src="/{{ pizza.image }}"
+                        alt="pizza image"
+                    />
+                    <figcaption class="polaroid_title">
+                        {{ pizza.name }}
+                    </figcaption>
+                    <span class="polaroid_link">
+                        <span>{{ t.pizzas.ingredients_label }}</span> →
+                    </span>
+                </figure>
+            </div>
+            <div class="back polaroid">
+                <h4 class="polaroid_title">
+                    {{ pizza.name }}
+                </h4>
+                <ul>
+                    {% for ingredient in pizza.ingredients[t.lang] %}
+                    <li>{{ ingredient }}</li>
+                    {% endfor %}
+                </ul>
+                <span class="polaroid_link">
+                    <span>{{ t.pizzas.back_label }}</span> →
+                </span>
+            </div>
+        </div>
+    </div>
+</li>

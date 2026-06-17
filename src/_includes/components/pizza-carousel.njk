@@ -1,0 +1,29 @@
+{# Pizza carousel component
+   Parameters:
+     - category: { id, label: { es, ca, en }, pizzas[] }
+     - t: translations object
+#}
+<h5>{{ category.label[t.lang] }}</h5>
+<div class="glide" id="pizza-glide-{{ category.id }}">
+    <div class="glide__track" data-glide-el="track">
+        <ul class="glide__slides">
+            {% for pizza in category.pizzas %}
+                {% include "components/pizza-card.njk" %}
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="glide__arrows" data-glide-el="controls">
+        <button
+            class="glide__arrow glide__arrow--left"
+            data-glide-dir="<"
+        >
+            ←
+        </button>
+        <button
+            class="glide__arrow glide__arrow--right"
+            data-glide-dir=">"
+        >
+            →
+        </button>
+    </div>
+</div>

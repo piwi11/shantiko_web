@@ -1,0 +1,17 @@
+---
+layout: layouts/base.njk
+pagination:
+    data: allTranslations
+    size: 1
+    alias: t
+    resolve: values
+permalink: "{{ t.lang }}/index.html"
+---
+{% include "components/header.njk" %}
+<main>
+    {% include "sections/_hero.njk" %}
+    {% include "sections/_about-us.njk" %}
+    {% include "sections/_pizzas.njk" %}
+    {% include "sections/_shantiko.njk" %}
+</main>
+{% include "components/footer.njk" %}

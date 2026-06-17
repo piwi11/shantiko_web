@@ -1,0 +1,62 @@
+{
+    "lang": "ca",
+    "site": {
+        "title": "ShantiKo PIZZES",
+        "description": "Foodtruck de pizzes de la Garrotxa"
+    },
+    "nav": {
+        "home": "Inici",
+        "welcome": "Benvinguda",
+        "pizzas": "Pizzes",
+        "shantiko": "ShantiKo",
+        "contact": "ConTacte",
+        "close": "Tancar"
+    },
+    "hero": {
+        "heading": "Foodtruck de Pizzes Artesanals",
+        "tagline": "cuinades al forn de llenya amb molt d'amor",
+        "description": "Directes als teus esdeveniments i celebracions <br />a qualsevol part de Catalunya",
+        "cta": "Veure Pizzes",
+        "cta_video": "Veure Vídeo"
+    },
+    "about": {
+        "heading": "Benvinguda",
+        "founders": "Som <b><em>Marita</em></b> i <b><em>Estela</em></b>, creadores de <em class=\"title-font text-primary font-variant-logo\">ShantiKo PIZZES</em>.",
+        "p1": "Aquest projecte sobre rodes neix entre volcans, després de més d'una dècada oferint pizzes en un emblemàtic poble de la Garrotxa. <br />El nostre esperit aventurer ens va impulsar a portar el nostre ofici com a pizzaioles a nous horitzons.",
+        "p2": "Les nostres pizzes, elaborades amb farines ecològiques, es fan al moment de forma artesanal. <br />Ens agrada cuidar cada detall del procés:",
+        "qualities": [
+            "Triant productes frescos i de qualitat.",
+            "Apostant per fermentacions llargues de la massa per fer-la més saludable i fàcil de digerir.",
+            "Cuinant al forn de llenya per aconseguir aquell sabor i textura inconfusible d'una pizza feta al foc"
+        ],
+        "p3": "L'amor per allò que fem i la motivació de nodrir amb saborosos i bons aliments de la terra són els <b>ingredients essencials de les nostres pizzes</b>."
+    },
+    "pizzas": {
+        "heading": "Les Nostres Pizzes",
+        "intro": "Adaptem la nostra carta a les necessitats de cada esdeveniment i solem oferir pizzes del dia segons els productes de temporada.",
+        "vegan_note": "Pots demanar qualsevol pizza amb <u>formatge vegà</u>.",
+        "ingredients_label": "INGREDIENTS",
+        "back_label": "TORNAR"
+    },
+    "shantiko": {
+        "heading": "Per als més curiosos: origen de ShantiKo",
+        "p1": "Aquest emprenedorisme neix a foc lent, entre pizza i pizza, cants i reflexions en un racó càlid i entranyable de la Garrotxa.",
+        "p2": "Sorgeix des del profund dels nostres cors com un somni en comú d'ampliar els nostres horitzons, i de portar allò que ens apassiona més enllà dels límits ja coneguts.",
+        "p3": "En la paraula <span class=\"title-font text-primary font-variant-logo\">ShantiKo</span> convergeixen diferents conceptes i energies que defineixen el nostre projecte i la filosofia que ens sustenta.",
+        "more_label": "Saber més",
+        "p4": "D'una banda, indubtablement, el nostre nom <span class=\"title-font text-primary font-variant-logo\">ShantiKo</span> sorgeix de la inspiració de la deessa asteca <span class=\"title-font font-variant-logo\">Chantico</span> i de totes les seves qualitats. Ella representa el foc intern, el foc del cor, el foc femení i el foc alquímic dels aliments que nodreixen la llar, entre moltes altres coses.",
+        "p5": "Així doncs, és un propòsit de reconèixer i donar lloc als emprenedorismes en femení, com el nostre, que neixen des de l'espurna interna. <span class=\"title-font font-variant-logo\">Chantico</span> també es vincula al foc intern de la terra, dels volcans de la Garrotxa que són testimonis dels nostres passos.",
+        "p6": "És un homenatge al foc, aquell element viu i en moviment, que encendem i cuidem cada vegada que posem en marxa la nostra pizzeria, i que marca la diferència en el sabor d'una pizza.",
+        "p7": "Una altra mirada al nostre nom podria ser <em class=\"title-font text-primary font-variant-logo\">Shanti</em> i <em class=\"title-font text-primary font-variant-logo\">Ko</em>. <br />Entenent <span class=\"title-font font-variant-logo\">Shanti</span> com aquella paraula en sànscrit vinculada a un estat de calma, pau i harmonia. Aquell estat des del qual ens agrada abordar el nostre projecte i la vida mateixa. i <span class=\"title-font font-variant-logo\">Ko</span>, aquestes dues lletres que ens porten al concepte de Kooperar, i Kolectivitzar, energies i recursos per manifestar un projecte."
+    },
+    "footer": {
+        "heading": "ConTacte",
+        "p1": "Ens desplacem per tota Catalunya per arribar al teu esdeveniment. Gaudeix amb tots els sentits de la nostra pizzeria nòmada.",
+        "p2": "Pots contractar els nostres serveis tant si estàs organitzant un festival, mercat, fira, com si vols celebrar un esdeveniment privat.",
+        "form_intro": "Omple el formulari i explica'ns com podem fer que el teu esdeveniment sigui encara més únic:",
+        "form_label": "Formulari per a esdeveniments",
+        "instagram": "@shantiko.pizzas",
+        "email": "info@shantiko.com",
+        "copyright": "&copy; ShantiKo 2025"
+    }
+}

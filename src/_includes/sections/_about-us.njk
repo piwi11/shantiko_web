@@ -1,0 +1,23 @@
+<!-- about us -->
+<section id="main-about_us" class="menu_section">
+    <div class="content_wrapper">
+        <h4>{{ t.about.heading }}</h4>
+        <p class="content_text">
+            {{ t.about.founders | safe }}
+            <img
+                data-src="/media/images/shantiko_presentacion.gif"
+                alt="Shantiko presentación"
+                class="content_img content_img--border"
+            />
+        </p>
+
+        <p class="content_text">{{ t.about.p1 | safe }}</p>
+        <p class="content_text">{{ t.about.p2 | safe }}</p>
+        <ul class="content_text li_custombullets">
+            {% for quality in t.about.qualities %}
+            <li>{{ quality }}</li>
+            {% endfor %}
+        </ul>
+        <p class="content_text">{{ t.about.p3 | safe }}</p>
+    </div>
+</section>

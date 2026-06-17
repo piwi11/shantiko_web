@@ -1,0 +1,62 @@
+{
+    "lang": "en",
+    "site": {
+        "title": "ShantiKo PIZZAS",
+        "description": "Artisan pizza foodtruck from La Garrotxa"
+    },
+    "nav": {
+        "home": "Home",
+        "welcome": "Welcome",
+        "pizzas": "Pizzas",
+        "shantiko": "ShantiKo",
+        "contact": "Contact",
+        "close": "Close"
+    },
+    "hero": {
+        "heading": "Artisan Wood-fired Pizza Foodtruck",
+        "tagline": "cooked with lots of love",
+        "description": "Straight to your events and celebrations <br />anywhere in Catalonia",
+        "cta": "See Pizzas",
+        "cta_video": "Watch Video"
+    },
+    "about": {
+        "heading": "Welcome",
+        "founders": "We are <b><em>Marita</em></b> and <b><em>Estela</em></b>, the creators of <em class=\"title-font text-primary font-variant-logo\">ShantiKo PIZZAS</em>.",
+        "p1": "This project on wheels was born among volcanoes, after more than a decade of offering pizzas in an emblematic village in La Garrotxa. <br />Our adventurous spirit pushed us to take our craft as pizzaiolas to new horizons.",
+        "p2": "Our pizzas, made with organic flours, are handcrafted on the spot. <br />We love taking care of every detail of the process:",
+        "qualities": [
+            "Choosing fresh, quality products.",
+            "Going for long dough fermentations to make it healthier and easier to digest.",
+            "Cooking in a wood-fired oven to achieve that unmistakable flavour and texture of a fire-baked pizza"
+        ],
+        "p3": "Our love for what we do and our drive to nourish with delicious, wholesome food from the land are the <b>essential ingredients of our pizzas</b>."
+    },
+    "pizzas": {
+        "heading": "Our Pizzas",
+        "intro": "We adapt our menu to the needs of each event and usually offer daily specials based on seasonal products.",
+        "vegan_note": "You can order any pizza with <u>vegan cheese</u>.",
+        "ingredients_label": "INGREDIENTS",
+        "back_label": "BACK"
+    },
+    "shantiko": {
+        "heading": "For the most curious: the origin of ShantiKo",
+        "p1": "This venture was born slowly, between pizza and pizza, songs and reflections in a warm and endearing corner of La Garrotxa.",
+        "p2": "It springs from the depths of our hearts as a shared dream to broaden our horizons and take what we are passionate about beyond the already known limits.",
+        "p3": "In the word <span class=\"title-font text-primary font-variant-logo\">ShantiKo</span> different concepts and energies converge that define our project and the philosophy that sustains us.",
+        "more_label": "Learn more",
+        "p4": "On one hand, undoubtedly, our name <span class=\"title-font text-primary font-variant-logo\">ShantiKo</span> is inspired by the Aztec goddess <span class=\"title-font font-variant-logo\">Chantico</span> and all her qualities. She represents the inner fire, the fire of the heart, the feminine fire and the alchemical fire of the foods that nourish the home, among many other things.",
+        "p5": "So it is a purpose of recognising and making space for feminine ventures, like ours, that are born from the inner spark. <span class=\"title-font font-variant-logo\">Chantico</span> is also linked to the inner fire of the earth, of the volcanoes of La Garrotxa that are witnesses to our steps.",
+        "p6": "It is a tribute to fire, that living and moving element, that we light and tend every time we start up our pizzeria, and that makes the difference in the taste of a pizza.",
+        "p7": "Another way to look at our name could be <em class=\"title-font text-primary font-variant-logo\">Shanti</em> and <em class=\"title-font text-primary font-variant-logo\">Ko</em>. <br />Understanding <span class=\"title-font font-variant-logo\">Shanti</span> as that Sanskrit word linked to a state of calm, peace and harmony. The state from which we like to approach our project and life itself. And <span class=\"title-font font-variant-logo\">Ko</span>, those two letters that lead us to the concept of Kooperating and Kollectivising energies and resources to manifest a project."
+    },
+    "footer": {
+        "heading": "Contact",
+        "p1": "We travel all over Catalonia to reach your event. Enjoy our nomadic pizzeria with all your senses.",
+        "p2": "You can hire our services whether you are organising a festival, market, fair, or if you want to celebrate a private event.",
+        "form_intro": "Fill in the form and tell us how we can make your event even more unique:",
+        "form_label": "Event enquiry form",
+        "instagram": "@shantiko.pizzas",
+        "email": "info@shantiko.com",
+        "copyright": "&copy; ShantiKo 2025"
+    }
+}

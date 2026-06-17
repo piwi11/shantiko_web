@@ -1,0 +1,108 @@
+<header id="main-header">
+    <a href="#"
+        ><img
+            src="/media/images/shantiko_logo.gif"
+            alt="Logotipo de Shantiko"
+    /></a>
+    <h1><span>S</span>hanti<span>k</span>o <br /><b>Pizzas</b></h1>
+    <nav>
+        <ul>
+            <li>
+                <a
+                    href="#main-hero"
+                    class="menu-item font-variant-logo active"
+                    >{{ t.nav.home }}</a
+                >
+            </li>
+            <li>
+                <a
+                    href="#main-about_us"
+                    class="menu-item font-variant-logo"
+                    >{{ t.nav.welcome }}</a
+                >
+            </li>
+            <li>
+                <a
+                    href="#main-pizzas"
+                    class="menu-item font-variant-logo"
+                    >{{ t.nav.pizzas }}</a
+                >
+            </li>
+            <li>
+                <a
+                    href="#main-shantiko"
+                    class="menu-item font-variant-logo"
+                    >{{ t.nav.shantiko }}</a
+                >
+            </li>
+            <li>
+                <a
+                    href="#main-footer"
+                    class="menu-item font-variant-logo"
+                    >{{ t.nav.contact }}</a
+                >
+            </li>
+        </ul>
+    </nav>
+    <nav class="lang-switcher" aria-label="Language selector">
+        {% for code, trans in allTranslations %}
+        <a href="/{{ code }}/" hreflang="{{ code }}" class="lang-switcher__link{% if t.lang == code %} lang-switcher__link--active{% endif %}">{{ code | upper }}</a>
+        {% endfor %}
+    </nav>
+    <button onclick="toggleMenu()" id="menu_button">
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 -960 960 960"
+            class="menu_button_open"
+        >
+            <path
+                d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+            />
+        </svg>
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 -960 960 960"
+            class="menu_button_close"
+        >
+            <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+            />
+        </svg>
+    </button>
+</header>
+<!-- Navigation Menu -->
+<nav id="menu">
+    <ul>
+        <li>
+            <a
+                href="#main-hero"
+                class="menu-item font-variant-logo active"
+                >{{ t.nav.home }}</a
+            >
+        </li>
+        <li>
+            <a href="#main-about_us" class="menu-item font-variant-logo"
+                >{{ t.nav.welcome }}</a
+            >
+        </li>
+        <li>
+            <a href="#main-pizzas" class="menu-item font-variant-logo"
+                >{{ t.nav.pizzas }}</a
+            >
+        </li>
+        <li>
+            <a href="#main-shantiko" class="menu-item font-variant-logo"
+                >{{ t.nav.shantiko }}</a
+            >
+        </li>
+        <li>
+            <a href="#main-footer" class="menu-item font-variant-logo"
+                >{{ t.nav.contact }}</a
+            >
+        </li>
+    </ul>
+    <a href="#" class="menu-item menu__close" onclick="closeMenu(event)"
+        >&#10006; {{ t.nav.close }}</a
+    >
+</nav>
+
